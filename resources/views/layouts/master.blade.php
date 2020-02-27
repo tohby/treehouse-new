@@ -61,7 +61,7 @@
                                 <a class="nav-link" href="/events">Events</a>
                                 <a class="nav-link" href="/blog">Blog</a>
                                 <a class="nav-link" href="/#">Mailing list</a>
-                                <a class="nav-link" href="/users/">Users</a>
+                                <a class="nav-link" href="/users">Users</a>
                             </div>
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -96,9 +96,9 @@
                 <a href="/events" class="{{ request()->is('events') || request()->is('events/*') ? 'active' : '' }}"></i>Events</a>
                 <a href="/blog" class="{{ request()->is('blog') || request()->is('blog/*') ? 'active' : '' }}"></i>Blog</a>
                 <a href="/consultation" class="{{ request()->is('consultation') ? 'active' : '' }}"></i>Mailing list</a>
-                @if (Auth::user()->role->id == 1)
-                    <a href="/users" class="{{ request()->is('users') ? 'active' : '' }}">Users</a>
-                @endif
+                @can ('manage-users')
+                    <a href="/users" class="{{ request()->is('users') || request()->is('users/*') ? 'active' : '' }}">Users</a>
+                @endcan
             </div>
         </div>
         <main class="py-2 px-3">
