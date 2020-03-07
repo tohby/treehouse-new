@@ -14,7 +14,8 @@ class CarouselController extends Controller
      */
     public function index()
     {
-        //
+        $carousels = Carousel::get();
+        return view('admin.carousel.index')->with('carousels', $carousels);
     }
 
     /**
@@ -24,7 +25,7 @@ class CarouselController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.carousel.create');
     }
 
     /**
@@ -35,7 +36,29 @@ class CarouselController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'image' => ['required', 'image'],
+            'text' => 'required',
+            'title' => 'required',
+            'url' => 'url',
+        ]);
+
+        if($request->hasFile('image')){
+                $image = $request->file('image') ;
+                $fileNameWithExt = $image->getClientOriginalName();
+                $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+                $extension = $image->getClientOriginalExtension();
+                $fileNameToStore = $fileName.'_'.time().'.'.$extension;
+                $path = $image->storeAs('public/carousel_images', $fileNameToStore);
+        }
+        
+        $carousel = Carousel::Create([
+            'title' => $request->input('title'),
+            'text' => $request->input('text'),
+            'link' => $request->input('url'),
+            'image' => $fileNameToStore,
+        ]);
+        return redirect('/carousel')->with('success', 'New carousel item has been successfully added');
     }
 
     /**
@@ -69,7 +92,29 @@ class CarouselController extends Controller
      */
     public function update(Request $request, Carousel $carousel)
     {
-        //
+        $request->validate([
+            'image' => 'image',
+            'text' => 'required',
+            'title' => 'required',
+            'url' => 'url|required',
+        ]);
+        if($request->hasFile('image')){
+            $image = $request->file('image') ;
+            $fileNameWithExt = $image->getClientOriginalName();
+            $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+            $extension = $image->getClientOriginalExtension();
+            $fileNameToStore = $fileName.'_'.time().'.'.$extension;
+            $path = $image->storeAs('public/carousel_images', $fileNameToStore);
+        }
+        $carousel = Carousel::find($carousel->id);
+        if(isset($fileNameToStore)){
+            $carousel->image = $fileNameToStore;
+        }
+        $carousel->title = $request->input('title');
+        $carousel->text = $request->input('text');
+        $carousel->link = $request->input('url');
+        $carousel->save();
+        return redirect('/carousel')->with('success', 'Yaayyy! carousel updated');
     }
 
     /**
@@ -80,6 +125,8 @@ class CarouselController extends Controller
      */
     public function destroy(Carousel $carousel)
     {
-        //
+        $carousel = Carousel::find($carousel->id);
+        $carousel->delete();
+        return redirect('/carousel')->with('success', 'the carousel has been deleted');
     }
 }

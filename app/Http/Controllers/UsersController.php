@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use App\User;
+use Illuminate\Support\Facades\Hash;
 
 class UsersController extends Controller
 {
@@ -52,7 +54,7 @@ class UsersController extends Controller
             'lastname' => $request->input('lastname'),
             'username' => $request->input('username'),
             'email' => $request->input('email'),
-            'role' => 3,
+            'role_id' => 3,
             'password' => Hash::make($request->input('password')),
         ]);
         return redirect()->back()->with('success', 'An account has been created for the new user');

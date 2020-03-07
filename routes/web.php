@@ -11,16 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes(['register' => false]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index');
 Route::group(['middleware' => 'auth'], function() {
     // Route::get('/home', 'HomeController@index')->name('home');
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
-    Route::resource('/users', 'UsersController');
+    Route::resource('/users', 'UsersController')->except(['show']);
+    Route::resource('carousel', 'CarouselController')->except(['show', 'edit']);
+    Route::get('change-password', 'ChangePasswordController@get');
+    Route::post('change-password', 'ChangePasswordController@change');
     // Route::resource('/events', 'EventController');
 });

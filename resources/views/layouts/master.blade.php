@@ -56,7 +56,7 @@
                         <li class="nav-item dropdown">
                             <div class="d-md-none">
                                 <a class="nav-link" href="/dashboard">Dashboard</a>
-                                <a class="nav-link" href="/profile">Profile</a>
+                                <a class="nav-link" href="/carousel">Carousel</a>
                                 <a class="nav-link" href="/news">Portfolio</a>
                                 <a class="nav-link" href="/events">Events</a>
                                 <a class="nav-link" href="/blog">Blog</a>
@@ -69,9 +69,13 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a href="/" class="dropdown-item">Go to Site</a>
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
+                                </a>
+                                <a class="dropdown-item" href="/change-password">
+                                    Change Password
                                 </a>
 
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST"
@@ -91,11 +95,11 @@
             </a>
             <div id="menu" class="px-3">
                 <a href="/dashboard" class="{{ request()->is('dashboard') || request()->is('dashboard/*') ? 'active' : '' }}"> Dashboard</a>
-                <a href="/profile" class="{{ request()->is('profile/*') || request()->is('profile/*/edit') || request()->is('product/*') ? 'active' : '' }}"></i>Profile</a>
-                <a href="/messages" class="{{ request()->is('messages') || request()->is('messages/*') ? 'active' : '' }}"></i>Portfolio</a>
+                <a href="/carousel" class="{{ request()->is('carousel') || request()->is('carousel/*')  ? 'active' : '' }}"></i>Carousel</a>
+                <a href="/portfolio" class="{{ request()->is('portfolio') || request()->is('portfolio/*') ? 'active' : '' }}"></i>Portfolio</a>
                 <a href="/events" class="{{ request()->is('events') || request()->is('events/*') ? 'active' : '' }}"></i>Events</a>
                 <a href="/blog" class="{{ request()->is('blog') || request()->is('blog/*') ? 'active' : '' }}"></i>Blog</a>
-                <a href="/consultation" class="{{ request()->is('consultation') ? 'active' : '' }}"></i>Mailing list</a>
+                <a href="/mailing-list" class="{{ request()->is('mailing-list') ? 'active' : '' }}"></i>Mailing list</a>
                 @can ('manage-users')
                     <a href="/users" class="{{ request()->is('users') || request()->is('users/*') ? 'active' : '' }}">Users</a>
                 @endcan
@@ -109,10 +113,12 @@
         </main>
     </div>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"
-        integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
-    <script src="{{ asset('js/aos.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
     <script src="{{ asset('js/bs-custom-file-input.js') }}"></script>
    
     <script src="{{ asset('js/app.js') }}"></script>

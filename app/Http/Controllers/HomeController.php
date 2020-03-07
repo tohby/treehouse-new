@@ -3,26 +3,29 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Carousel;
+use App\Event;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+   
 
     /**
-     * Show the application dashboard.
+     * Show the application welcome.
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
     {
-        return view('home');
+        $carousels = Carousel::get();
+        return view('home', compact('carousels'));
+    }
+
+    public function events(){
+
+    }
+
+    public function portfolio(){
+
     }
 }
