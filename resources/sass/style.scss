@@ -1,11 +1,11 @@
 @font-face {
   font-family: Nexa;
-  src: url("../fonts/Nexa-Bold.otf");
+  src: url("../../public/fonts/Nexa-Bold.otf");
 }
 
 @font-face {
   font-family: Nexa;
-  src: url("../fonts/Nexa-Light.otf");
+  src: url("../../public/fonts/Nexa-Light.otf");
 }
 
 .div_top {
@@ -928,13 +928,13 @@ Javascript disabled
       width: 100%;
   }
   .item1 {
-      background-image: url("../images/jase-ess-g4aiU4mEsZM-unsplash@3x.png");
+      background-image: url("../../public/images/jase-ess-g4aiU4mEsZM-unsplash@3x.png");
   }
   .item2 {
-      background-image: url("../images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png");
+      background-image: url("../..public/images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png");
   }
   .item3 {
-      background-image: url("../images/scott-webb-uCoyUNF6Fg4-unsplash\ \(1\)@3x.png");
+      background-image: url("../../public/images/scott-webb-uCoyUNF6Fg4-unsplash\ \(1\)@3x.png");
   }
   .button_order {
       padding: 19px 19px;
@@ -1566,7 +1566,7 @@ Javascript disabled
 .gf_section-12 {
   padding: 97px 0 67px 0;
   .contact_background {
-      background-image: url(../images/istockphoto-510630336-612x612@3x.jpg);
+      background-image: url(../../public/images/istockphoto-510630336-612x612@3x.jpg);
       background-position: center;
       height: 667px;
       width: 100%;
@@ -1575,7 +1575,7 @@ Javascript disabled
   }
   .overlay {
       position: absolute;
-      background-image: url(../images/1istockphoto-510630336-612x612@3x.png);
+      background-image: url(../../public/images/1istockphoto-510630336-612x612@3x.png);
       background-position: center;
       height: 100%;
       width: 100%;
@@ -1931,12 +1931,3 @@ Javascript disabled
       }
   }
 }
-
-
-/*# Carousel Gallery*/
-
-
-/*
-https://codepen.io/g-sco/pen/WEEzEm
-https://cowboy.com/#power
-*/
