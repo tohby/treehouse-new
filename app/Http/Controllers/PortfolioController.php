@@ -26,7 +26,7 @@ class PortfolioController extends Controller
      */
     public function create()
     {
-        return view('admin.carousel.create');
+        return view('admin.portfolio.create');
     }
 
     /**
@@ -77,7 +77,7 @@ class PortfolioController extends Controller
     public function show(Portfolio $portfolio)
     {
         $portfolio = Portfolio::find($portfolio->id);
-        return view('admin/portfolio/show', compact('portfolio'));
+        return view('admin/portfolio/view', compact('portfolio'));
     }
 
     /**
@@ -89,7 +89,7 @@ class PortfolioController extends Controller
     public function edit(Portfolio $portfolio)
     {
         $portfolio = Portfolio::find($portfolio->id);
-        return view('admin/portfolio/show', compact('portfolio'));
+        return view('admin/portfolio/edit', compact('portfolio'));
     }
 
     /**
@@ -101,8 +101,36 @@ class PortfolioController extends Controller
      */
     public function update(Request $request, Portfolio $portfolio)
     {
+        $request->validate([
+            'image.*.file' => 'required|image',
+            'title' => 'required',
+            'description' => 'required',
+        ]);
+
         $portfolio = Portfolio::find($portfolio->id);
-        return view('admin/portfolio/show', compact('portfolio'));
+        $portfolio->title = $request->input('title');
+        $portfolio->description = $request->input('description');
+
+        if($request->hasFile('image')){
+                foreach ($request->file('image') as $image) {
+                $fileNameWithExt = $image->getClientOriginalName();
+                //get just file name
+                $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+                //get extension
+                $extension = $image->getClientOriginalExtension();
+                //filename to store
+                $fileNameToStore = $fileName.'_'.time().'.'.$extension;
+                //image upload
+                $path = $image->storeAs('public/post_images', $fileNameToStore);
+                $images = Images::create([
+                    'portfolio_id' => $portfolio->id,
+                    'image' => $fileNameToStore,
+                ]);
+            }
+        }
+        $portfolio->save();
+
+        return redirect('/portfolio')->with('success', 'Item has been successfully updated');
     }
 
     /**

@@ -3,32 +3,114 @@
         <div class="cd-hero">
             <div id="slider">
                 <ul class="cd-hero-slider">
-                    @foreach ($carousels as $carousel)
-                        <li class="selected">
-                            <div class="gf_flex cd-full-width">
-                                <p class="text_year">2019</p>
-                                <div class="content_text">
-                                    <h2>Mr Kanh</h2>
-                                    <p>khanh<br> The Architect </p>
-                                    <a href="#" class="link_project cd-btn">
-                                        <span>See project</span>
-                                        <span>
-                                            <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-right" role="img"
-                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"
-                                                class="svg-inline--fa fa-chevron-right fa-w-8 fa-2x">
-                                                <path fill="currentColor"
-                                                    d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
-                                                    class=""></path>
-                                            </svg>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="text_number">
-                                    <p class="number_large">01/</p>
-                                    <p class="number_small">04</p>
-                                </div>
-                        </li>
-                    @endforeach
+                    <li class="selected">
+                        <div class="gf_flex cd-full-width">
+                            <p class="text_year">2019</p>
+                            <div class="content_text">
+                                <h2>Mr Kanh</h2>
+                                <p>khanh<br> The Architect </p>
+                                <a href="#" class="link_project cd-btn">
+                                    <span>See project</span>
+                                    <span>
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fal"
+                                            data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 256 512" class="svg-inline--fa fa-chevron-right fa-w-8 fa-2x">
+                                            <path fill="currentColor"
+                                                d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                                                class=""></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="text_number">
+                                <p class="number_large">01/</p>
+                                <p class="number_small">04</p>
+                                </p>
+
+                            </div>
+
+
+                    </li>
+
+                    <li>
+                        <div class="gf_flex cd-full-width">
+                            <p class="text_year">2019</p>
+                            <div class="content_text">
+                                <h2>Mr Kanh</h2>
+                                <p>Khanh’s<br> Painting Stand </p>
+                                <a href="#" class="link_project cd-btn">
+                                    <span>See project</span>
+                                    <span>
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fal"
+                                            data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 256 512" class="svg-inline--fa fa-chevron-right fa-w-8 fa-2x">
+                                            <path fill="currentColor"
+                                                d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                                                class=""></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="text_number">
+                                <p class="number_large">02/</p>
+                                <p class="number_small">04</p>
+                                </p>
+
+                            </div>
+                    </li>
+
+                    <li>
+                        <div class="gf_flex cd-full-width">
+                            <p class="text_year">2019</p>
+                            <div class="content_text">
+                                <h2>Mr Kanh</h2>
+                                <p>khanh<br> The Architect </p>
+                                <a href="#" class="link_project cd-btn">
+                                    <span>See project</span>
+                                    <span>
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fal"
+                                            data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 256 512" class="svg-inline--fa fa-chevron-right fa-w-8 fa-2x">
+                                            <path fill="currentColor"
+                                                d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                                                class=""></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="text_number">
+                                <p class="number_large">03/</p>
+                                <p class="number_small">04</p>
+                                </p>
+                            </div>
+                    </li>
+
+                    <li class="">
+                        <div class="gf_flex cd-full-width">
+                            <p class="text_year">2019</p>
+                            <div class="content_text">
+                                <h2>Mr Kanh</h2>
+                                <p>Khanh’s<br> Painting Stand </p>
+                                <a href="#" class="link_project cd-btn">
+                                    <span>See project</span>
+                                    <span>
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fal"
+                                            data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 256 512" class="svg-inline--fa fa-chevron-right fa-w-8 fa-2x">
+                                            <path fill="currentColor"
+                                                d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                                                class=""></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="text_number">
+                                <p class="number_large">04/</p>
+                                <p class="number_small">04</p>
+                                </p>
+                            </div>
+                    </li>
+
                 </ul>
             </div>
             <div class="icon_mess">

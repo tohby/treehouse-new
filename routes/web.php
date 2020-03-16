@@ -14,6 +14,7 @@
 Auth::routes(['register' => false]);
 
 Route::get('/', 'HomeController@index');
+Route::get('/products', 'HomeController@portfolio');
 Route::group(['middleware' => 'auth'], function() {
     // Route::get('/home', 'HomeController@index')->name('home');
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');

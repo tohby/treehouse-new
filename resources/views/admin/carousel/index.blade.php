@@ -23,7 +23,6 @@
                         <a href="/news/{{$carousel->id}}">
                             <h3 class="card-title font-weight-bold">{{$carousel->title}}</h3>
                         </a>
-                        <p class="card-text">{{$carousel->text}}</p>
                         <div class="d-flex justify-content-end">
                             <small>
                                 <button type="button" class="btn btn-link text-dark text-muted" data-toggle="modal" data-target=".bd-edit-modal-lg"><i class="fas fa-pencil-alt"></i></button>

@@ -18,8 +18,6 @@
 
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/global.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/carousel.css')}}">
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -30,21 +28,18 @@
     <script src="https://d1um8515vdn9kb.cloudfront.net/libs/js/owl.carousel.min.js"></script>
 
 
-    <style>
-
-    </style>
 </head>
 
 <body>
-    <section class="gf_section-5" data-name="menu">
-        <div class="nav_mobile_trans menu_body">
+    <section class="gf_section-5  " data-name="menu">
+        <div class="menu_body gt_sticky-header">
             <div class="">
                 <div class="gf_flex menu_content">
                     <div class="logo">
-                        <a href="/" class="logo_text">
-                            <p class="text_large">Khan</p>
-                            <p class="text_small"> Tree House, Hanoi </p>
-                        </a>
+                        <h1 class="logo_text">
+                            <p class="text_large">Kanh</p>
+                            <p class="text_small"> Hanoi, Vietnam</p>
+                        </h1>
                     </div>
                     <div class="gf_flex nav_menu">
                         <ul class="gf_flex menu_left">
@@ -86,6 +81,7 @@
     <main>
         @yield('content')
     </main>
+
     <section class="gf_section-10" data-name="Footer">
         <div class="footer_content">
             <div class="gf_container">
@@ -188,16 +184,8 @@
 
 
     <script>
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 1) {
-                $('.menu_body').addClass("gt_sticky-header");
-                $('.menu_body').delay(10).fadeIn(400);
-            } else {
-                $('.menu_body').removeClass("gt_sticky-header");
-            }
-        });
-        $(document).ready(function() {
-            $('ul li').click(function() {
+        $(document).ready(function(){
+            $('ul li').click(function(){
                 $('li').removeClass("active");
                 $(this).addClass("active");
             });
@@ -209,17 +197,24 @@
 
         });
 
-        $(".popup img").click(function() {
+        $(".popup img").click(function () {
             var $src = $(this).attr("src");
             $(".show").fadeIn();
             $(".img-show img").attr("src", $src);
         });
 
-        $("span, .overlay").click(function() {
+        $("span, .overlay").click(function () {
             $(".show").fadeOut();
         });
 
-
+        // $(window).scroll(function () {
+        //     if ($(document).scrollTop() > 1) {
+        //         $('.menu_body').addClass("gt_sticky-header");
+        //         $('.menu_body').delay(10).fadeIn(400);
+        //     } else {
+        //         $('.menu_body').removeClass("gt_sticky-header");
+        //     }
+        // });
 
         $('.gt_slide_partner').owlCarousel({
             loop: true,
@@ -233,42 +228,42 @@
             autoplayHoverPause: true,
             responsive: {
                 0: {
-                    items: 1
+                items: 1
                 },
                 600: {
-                    items: 1
+                items: 3
                 },
                 1000: {
-                    items: 4
+                items: 4
                 }
             }
-        })
+            })
 
-        jQuery(document).ready(function($) {
+        jQuery(document).ready(function($){
             //on mobile - open/close primary navigation clicking/tapping the menu icon
-            $('.cd-primary-nav').on('click', function(event) {
-                if ($(event.target).is('.cd-primary-nav')) $(this).children('ul').toggleClass('is-visible');
+            $('.cd-primary-nav').on('click', function(event){
+                if($(event.target).is('.cd-primary-nav')) $(this).children('ul').toggleClass('is-visible');
             });
 
-            var $sectionAfter = $(".cd-hero").next();
+            var $sectionAfter =  $(".cd-hero").next();
             if ($sectionAfter && $sectionAfter.length) {
-                $('.scroll_link').click(function() {
-                    $("body,html").animate({
-                        scrollTop: $sectionAfter.offset().top
-                    }, 1000);
-                });
-            }
+            $('.scroll_link').click(function(){
+                $("body,html").animate({
+                    scrollTop: $sectionAfter.offset().top
+                },1000);
+            });
+        }
 
 
-            $('.cd-slider-nav li').on('click', function(event) {
+            $('.cd-slider-nav li').on('click', function(event){
                 event.preventDefault();
                 var selectedItem = $(this);
-                if (!selectedItem.hasClass('selected')) {
+                if(!selectedItem.hasClass('selected')) {
                     // if it's not already selected
                     var selectedPosition = selectedItem.index(),
                         activePosition = $('.cd-hero-slider .selected').index();
 
-                    if (activePosition < selectedPosition) {
+                    if( activePosition < selectedPosition) {
                         nextSlide($('.cd-hero-slider'), $('.cd-slider-nav'), selectedPosition);
                         nextSlide($('.dots'), $('.cd-slider-nav'), selectedPosition);
                     } else {
@@ -276,20 +271,20 @@
                         prevSlide($('.dots'), $('.cd-slider-nav'), selectedPosition);
                     }
 
-                    updateNavigationMarker(selectedPosition + 1);
+                    updateNavigationMarker(selectedPosition+1);
                 }
             });
 
-            $('.dots li').on('click', function(event) {
+            $('.dots li').on('click', function(event){
                 console.log()
                 event.preventDefault();
                 var selectedItem = $(this);
-                if (!selectedItem.hasClass('selected')) {
+                if(!selectedItem.hasClass('selected')) {
                     // if it's not already selected
                     var selectedPosition = selectedItem.index(),
                         activePosition = $('.cd-hero-slider .selected').index();
 
-                    if (activePosition < selectedPosition) {
+                    if( activePosition < selectedPosition) {
                         console.log
                         nextSlide($('.cd-hero-slider'), $('.dots'), selectedPosition);
                         nextSlide($('.dots'), $('.cd-slider-nav'), selectedPosition);
@@ -298,16 +293,16 @@
                         prevSlide($('.dots'), $('.cd-slider-nav'), selectedPosition);
                     }
 
-                    updateNavigationMarker(selectedPosition + 1);
+                    updateNavigationMarker(selectedPosition+1);
                 }
             });
 
 
-            function nextSlide(container, pagination, n) {
+            function nextSlide(container, pagination, n){
                 var visibleSlide = container.find('.selected'),
                     navigationDot = pagination.find('.selected');
 
-                visibleSlide.removeClass('selected from-left from-right').addClass('is-moving').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
+                visibleSlide.removeClass('selected from-left from-right').addClass('is-moving').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
                     visibleSlide.removeClass('is-moving');
                 });
 
@@ -319,11 +314,11 @@
             }
 
 
-            function prevSlide(container, pagination, n) {
+            function prevSlide(container, pagination, n){
                 var visibleSlide = container.find('.selected'),
                     navigationDot = pagination.find('.selected');
 
-                visibleSlide.removeClass('selected from-left from-right').addClass('is-moving').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function() {
+                visibleSlide.removeClass('selected from-left from-right').addClass('is-moving').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
                     visibleSlide.removeClass('is-moving');
                 });
 
@@ -369,16 +364,33 @@
             }); /*http://idangero.us/swiper/api/*/
 
 
+
+        //window on dom ready
+            // window.addEvent('domready', function() {
+            //     //for every switch-view link
+            //     $$('.cd-slider-nav li').each(function(el) {
+            //         //add click event
+            //         el.addEvent('click', function(e) {
+            //             //nowhere
+            //             e.stop();
+            //             //morph baby!
+            //             myFx = new Fx.Morph('cd-hero-slider', {duration: 500, transition: Fx.Transitions.Sine.easeOut}).start('.' + el.get('rel'));
+            //         });
+            //     });
+            // });
+
+
+
             function checkVideo(hiddenSlide, container, n) {
                 //check if a video outside the viewport is playing - if yes, pause it
-                if (hiddenSlide.find('video').length > 0) hiddenSlide.find('video').get(0).pause();
+                if( hiddenSlide.find('video').length > 0 ) hiddenSlide.find('video').get(0).pause();
 
                 //check if the select slide contains a video element - if yes, play the video
-                if (container.children('li').eq(n).find('video').length > 0) container.children('li').eq(n).find('video').get(0).play();
+                if( container.children('li').eq(n).find('video').length > 0 ) container.children('li').eq(n).find('video').get(0).play();
             }
 
             function updateNavigationMarker(n) {
-                $('.cd-marker').removeClassPrefix('item').addClass('item-' + n);
+                $('.cd-marker').removeClassPrefix('item').addClass('item-'+n);
             }
 
             $.fn.removeClassPrefix = function(prefix) {
@@ -392,6 +404,7 @@
                 return this;
             };
         });
+
     </script>
 </body>
 

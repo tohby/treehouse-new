@@ -95,6 +95,13 @@ nav {
      object-fit: cover;
 }
 
+.thumbnail {
+  width: 6vw;
+  height: 6vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .trash {
   font-size: 70px;
   color: #ff6c00;
