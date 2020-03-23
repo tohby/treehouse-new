@@ -15,7 +15,7 @@ class EventController extends Controller
     public function index()
     {
         $date = today()->format('Y-m-d');
-        $events = Event::where('end_date', '>=', $date)->orderBy('created_at', 'desc')->simplePaginate(5);
+        $events = Event::where('end_at', '>=', $date)->orderBy('created_at', 'desc')->simplePaginate(5);
         return view('admin.events.index', compact('events'));
     }
 
@@ -73,7 +73,35 @@ class EventController extends Controller
      */
     public function update(Request $request, Event $event)
     {
-        //
+        $request->validate([
+            'image.*.file' => 'required|image',
+            'title' => 'required',
+            'description' => 'required',
+        ]);
+
+        $portfolio = Portfolio::find($portfolio->id);
+        $portfolio->title = $request->input('title');
+        $portfolio->description = $request->input('description');
+
+        if($request->hasFile('image')){
+            $image = $request->file('image');
+            $fileNameWithExt = $image->getClientOriginalName();
+            //get just file name
+            $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+            //get extension
+            $extension = $image->getClientOriginalExtension();
+            //filename to store
+            $fileNameToStore = $fileName.'_'.time().'.'.$extension;
+            //image upload
+            $path = $image->storeAs('public/post_images', $fileNameToStore);
+            $images = Images::create([
+                'portfolio_id' => $portfolio->id,
+                'image' => $fileNameToStore,
+            ]);
+        }
+        $portfolio->save();
+
+        return redirect('/portfolio')->with('success', 'Item has been successfully updated');
     }
 
     /**
@@ -84,6 +112,8 @@ class EventController extends Controller
      */
     public function destroy(Event $event)
     {
-        //
+        $event = Portfolio::find($event->id);
+        $event->delete();
+        return redirect('/events')->with('success', 'Event has been deleted');
     }
 }

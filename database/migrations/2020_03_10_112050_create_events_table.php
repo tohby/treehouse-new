@@ -22,8 +22,8 @@ class CreateEventsTable extends Migration
             $table->string('ticket_fee');
             $table->date('start_at');
             $table->date('end_at');
-            $table->time('start_time');
-            $table->time('end_time');
+            $table->time('start_time')->nullable();
+            $table->time('end_time')->nullable();
             $table->timestamps();
         });
     }
