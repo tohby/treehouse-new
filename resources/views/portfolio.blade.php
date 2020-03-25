@@ -5,221 +5,27 @@
         <div class="portfolio_body">
             <div class="brearcumb_content">
                 <ul class="breadcrumb">
-                    <li><a href="#">Art</a></li>
-                    <li><a href="#">Sculpting</a></li>
+                    <li>Art</li>
+                    <li>Sculpting</li>
                     <li>Architecture</li>
                 </ul>
             </div>
             <div class="portfolio_content portfolio_mobile">
                 <div class="gf_flex box_item">
-                    <div class="item_content">
-                        <div class="item ">
-                            <div class="bacground_image item1"></div>
-                            <a href="#" class="button_order">
-                                Order Paint
-                            </a>
+                    @foreach ($portfolios as $item)
+                        <div class="item_content">
+                            <div class="item ">
+                                <div class="bacground_image" style="background-image: url('/storage/post_images/{{$item->images->first()->image}}');"></div>
+                                <a href="product/{{$item->id}}" class="button_order">
+                                    Order Paint
+                                </a>
+                            </div>
+                            <div class="info_product">
+                                <h3>{{$item->title}}</h3>
+                                <p>Nguyen Lam</p>
+                            </div>
                         </div>
-                        <div class="info_product">
-                            <h3>Untitled Abstract IV</h3>
-                            <p>Nguyen Lam</p>
-
-                        </div>
-                    </div>
-                    <div class="item_content">
-                        <div class="item ">
-                            <div class="bacground_image item1"></div>
-                            <a href="#" class="button_order">
-                                Order Paint
-                            </a>
-                        </div>
-                        <div class="info_product">
-                            <h3>Untitled Abstract IV</h3>
-                            <p>Nguyen Lam</p>
-
-                        </div>
-                    </div>
-                    <div class="item_content">
-                        <div class="item ">
-                            <div class="bacground_image item1"></div>
-                            <a href="#" class="button_order">
-                                Order Paint
-                            </a>
-                        </div>
-                        <div class="info_product">
-                            <h3>Untitled Abstract IV</h3>
-                            <p>Nguyen Lam</p>
-
-                        </div>
-                    </div>
-                    <div class="item_content">
-                        <div class="item ">
-                            <div class="bacground_image item2"></div>
-                            <a href="#" class="button_order">
-                                Order Paint
-                            </a>
-                        </div>
-                        <div class="info_product">
-                            <h3>Untitled Abstract IV</h3>
-                            <p>Nguyen Lam</p>
-
-                        </div>
-                    </div>
-                    <div class="item_content">
-                        <div class="item ">
-                            <div class="bacground_image item3"></div>
-                            <a href="#" class="button_order">
-                                Order Paint
-                            </a>
-                        </div>
-                        <div class="info_product">
-                            <h3>Untitled Abstract IV</h3>
-                            <p>Nguyen Lam</p>
-
-                        </div>
-                    </div>
-                    <div class="item_content">
-                        <div class="item ">
-                            <div class="bacground_image item1"></div>
-                            <a href="#" class="button_order">
-                                Order Paint
-                            </a>
-                        </div>
-                        <div class="info_product">
-                            <h3>Untitled Abstract IV</h3>
-                            <p>Nguyen Lam</p>
-
-                        </div>
-                    </div>
-                    <div class="item_content">
-                        <div class="item ">
-                            <div class="bacground_image item2"></div>
-                            <a href="#" class="button_order">
-                                Order Paint
-                            </a>
-                        </div>
-                        <div class="info_product">
-                            <h3>Untitled Abstract IV</h3>
-                            <p>Nguyen Lam</p>
-
-                        </div>
-                    </div>
-                    <div class="item_content">
-                        <div class="item ">
-                            <div class="bacground_image item3"></div>
-                            <a href="#" class="button_order">
-                                Order Paint
-                            </a>
-                        </div>
-                        <div class="info_product">
-                            <h3>Untitled Abstract IV</h3>
-                            <p>Nguyen Lam</p>
-
-                        </div>
-                    </div>
-                    <div class="item_content">
-                        <div class="item ">
-                            <div class="bacground_image item1"></div>
-                            <a href="#" class="button_order">
-                                Order Paint
-                            </a>
-                        </div>
-                        <div class="info_product">
-                            <h3>Untitled Abstract IV</h3>
-                            <p>Nguyen Lam</p>
-
-                        </div>
-                    </div>
-                    <div class="item_content">
-                        <div class="item ">
-                            <div class="bacground_image item1"></div>
-                            <a href="#" class="button_order">
-                                Order Paint
-                            </a>
-                        </div>
-                        <div class="info_product">
-                            <h3>Untitled Abstract IV</h3>
-                            <p>Nguyen Lam</p>
-
-                        </div>
-                    </div>
-                    <div class="item_content">
-                        <div class="item ">
-                            <div class="bacground_image item1"></div>
-                            <a href="#" class="button_order">
-                                Order Paint
-                            </a>
-                        </div>
-                        <div class="info_product">
-                            <h3>Untitled Abstract IV</h3>
-                            <p>Nguyen Lam</p>
-
-                        </div>
-                    </div>
-                    <div class="item_content">
-                        <div class="item ">
-                            <div class="bacground_image item2"></div>
-                            <a href="#" class="button_order">
-                                Order Paint
-                            </a>
-                        </div>
-                        <div class="info_product">
-                            <h3>Untitled Abstract IV</h3>
-                            <p>Nguyen Lam</p>
-
-                        </div>
-                    </div>
-                    <div class="item_content">
-                        <div class="item ">
-                            <div class="bacground_image item3"></div>
-                            <a href="#" class="button_order">
-                                Order Paint
-                            </a>
-                        </div>
-                        <div class="info_product">
-                            <h3>Untitled Abstract IV</h3>
-                            <p>Nguyen Lam</p>
-
-                        </div>
-                    </div>
-                    <div class="item_content">
-                        <div class="item ">
-                            <div class="bacground_image item1"></div>
-                            <a href="#" class="button_order">
-                                Order Paint
-                            </a>
-                        </div>
-                        <div class="info_product">
-                            <h3>Untitled Abstract IV</h3>
-                            <p>Nguyen Lam</p>
-
-                        </div>
-                    </div>
-                    <div class="item_content">
-                        <div class="item ">
-                            <div class="bacground_image item2"></div>
-                            <a href="#" class="button_order">
-                                Order Paint
-                            </a>
-                        </div>
-                        <div class="info_product">
-                            <h3>Untitled Abstract IV</h3>
-                            <p>Nguyen Lam</p>
-
-                        </div>
-                    </div>
-                    <div class="item_content">
-                        <div class="item ">
-                            <div class="bacground_image item3"></div>
-                            <a href="#" class="button_order">
-                                Order Paint
-                            </a>
-                        </div>
-                        <div class="info_product">
-                            <h3>Untitled Abstract IV</h3>
-                            <p>Nguyen Lam</p>
-
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
 
             </div>

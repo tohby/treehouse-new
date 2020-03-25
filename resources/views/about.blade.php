@@ -16,9 +16,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
 
-    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/global.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/carousel.css')}}">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/global.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -29,6 +28,81 @@
     <script src="https://d1um8515vdn9kb.cloudfront.net/libs/js/owl.carousel.min.js"></script>
 
 
+    <style>
+        /*Carousel Gallery*/
+        .carousel-gallery {
+            margin: 50px 0;
+            padding: 0 30px;
+        }
+
+        .carousel-gallery .swiper-slide a {
+            display: block;
+            width: 100%;
+            height: 213px;
+            overflow: hidden;
+            position: relative;
+            -webkit-box-shadow: 3px 2px 20px 0px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 3px 2px 20px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 3px 2px 20px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-gallery .swiper-slide a:hover .image .overlay {
+            opacity: 1;
+        }
+
+        .carousel-gallery .swiper-slide a .image {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center center;
+            border-radius: 5px;
+        }
+
+        .carousel-gallery .swiper-slide a .image .overlay {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(20, 20, 20, 0.8);
+            text-align: center;
+            opacity: 0;
+            -webkit-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+        }
+
+        .carousel-gallery .swiper-slide a .image .overlay em {
+            color: #fff;
+            font-size: 26px;
+            position: relative;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            display: inline-block;
+        }
+
+        .carousel-gallery .swiper-pagination {
+            position: relative;
+            bottom: auto;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .carousel-gallery .swiper-pagination .swiper-pagination-bullet {
+            -webkit-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+        }
+
+        .carousel-gallery .swiper-pagination .swiper-pagination-bullet:hover {
+            opacity: 0.7;
+        }
+
+        .carousel-gallery .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-color: #d63031;
+            transform: scale(1.1, 1.1);
+        }
+    </style>
 </head>
 
 <body>
@@ -44,18 +118,29 @@
                     </div>
                     <div class="gf_flex nav_menu">
                         <ul class="gf_flex menu_left">
-                            <li class="active">
+                            <li class="">
                                 <a href="index.html">Store</a>
                             </li>
                             <li>
                                 <a href="#">News</a>
+                                <ul class="sub_menu">
+                                    <li>
+                                        <a href="#">news1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">news1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">news1</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="#">Events</a>
                             </li>
                         </ul>
                         <ul class="gf_flex menu_right">
-                            <li>
+                            <li class="active">
                                 <a href="/about">About Me</a>
                             </li>
                             <li>
@@ -63,14 +148,269 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="icon_menu">
+                        <div class="line_icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
     </section>
-    <main>
-        @yield('content')
-    </main>
+
+
+    <section class="gf_section-11 div_top" data-name="AboutmeDetail">
+        <div class="gf_container">
+            <div class="gf_flex about_me_content">
+
+                <div class="content_left">
+                    <div class="image_about_me">
+                        <div class="owl-carousel gt_slide_partner">
+                            <div class="item gt_product-carousel--item">
+                                <img src="./images/photo-1487309078313-fad80c3ec1e5@3x.png">
+                            </div>
+                            <div class="item gt_product-carousel--item">
+                                <img src="./images/photo-1487309078313-fad80c3ec1e5@3x.png">
+                            </div>
+                            <div class="item gt_product-carousel--item">
+                                <img src="./images/photo-1487309078313-fad80c3ec1e5@3x.png">
+                            </div>
+                            <div class="item gt_product-carousel--item">
+                                <img src="./images/photo-1487309078313-fad80c3ec1e5@3x.png">
+                            </div>
+                            <div class="item gt_product-carousel--item">
+                                <img src="./images/photo-1487309078313-fad80c3ec1e5@3x.png">
+                            </div>
+                        </div>
+                        <div class="image_mobile">
+                            <img src="./images/photo-1487309078313-fad80c3ec1e5@3x.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="content_right">
+                    <div class="content_text">
+                        <div class="title_content">
+                            <span>Product Details</span>
+                        </div>
+                        <div class="detail_content">
+                            <p>
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                aliquyam erat, sed diam volu amet.
+
+                            </p>
+                            <button type="submit">Buy Now</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="gf_section-3 list_product_mobile" data-name="Portfolio">
+        <div class="gf_container">
+            <div class="portfolio_body">
+                <div class="gf_flex title_portfolio" style="justify-content: center">
+                    <h2>Similar Products</h2>
+                </div>
+                <div class="portfolio_content">
+                    <div class="gf_flex box_item">
+                        <div class="item_content">
+                            <div class="item ">
+                                <div class="bacground_image item1"></div>
+                                <a href="#" class="button_order">
+                                    Order Paint
+                                </a>
+                            </div>
+                            <div class="info_product">
+                                <h3>Untitled Abstract IV</h3>
+                                <p>Nguyen Lam</p>
+
+                            </div>
+                        </div>
+                        <div class="item_content">
+                            <div class="item ">
+                                <div class="bacground_image item1"></div>
+                                <a href="#" class="button_order">
+                                    Order Paint
+                                </a>
+                            </div>
+                            <div class="info_product">
+                                <h3>Untitled Abstract IV</h3>
+                                <p>Nguyen Lam</p>
+
+                            </div>
+                        </div>
+                        <div class="item_content">
+                            <div class="item ">
+                                <div class="bacground_image item1"></div>
+                                <a href="#" class="button_order">
+                                    Order Paint
+                                </a>
+                            </div>
+                            <div class="info_product">
+                                <h3>Untitled Abstract IV</h3>
+                                <p>Nguyen Lam</p>
+
+                            </div>
+                        </div>
+                        <div class="item_content">
+                            <div class="item ">
+                                <div class="bacground_image item2"></div>
+                                <a href="#" class="button_order">
+                                    Order Paint
+                                </a>
+                            </div>
+                            <div class="info_product">
+                                <h3>Untitled Abstract IV</h3>
+                                <p>Nguyen Lam</p>
+
+                            </div>
+                        </div>
+                        <div class="item_content">
+                            <div class="item ">
+                                <div class="bacground_image item3"></div>
+                                <a href="#" class="button_order">
+                                    Order Paint
+                                </a>
+                            </div>
+                            <div class="info_product">
+                                <h3>Untitled Abstract IV</h3>
+                                <p>Nguyen Lam</p>
+
+                            </div>
+                        </div>
+                        <div class="item_content">
+                            <div class="item ">
+                                <div class="bacground_image item1"></div>
+                                <a href="#" class="button_order">
+                                    Order Paint
+                                </a>
+                            </div>
+                            <div class="info_product">
+                                <h3>Untitled Abstract IV</h3>
+                                <p>Nguyen Lam</p>
+
+                            </div>
+                        </div>
+                        <div class="item_content">
+                            <div class="item ">
+                                <div class="bacground_image item2"></div>
+                                <a href="#" class="button_order">
+                                    Order Paint
+                                </a>
+                            </div>
+                            <div class="info_product">
+                                <h3>Untitled Abstract IV</h3>
+                                <p>Nguyen Lam</p>
+
+                            </div>
+                        </div>
+                        <div class="item_content">
+                            <div class="item ">
+                                <div class="bacground_image item3"></div>
+                                <a href="#" class="button_order">
+                                    Order Paint
+                                </a>
+                            </div>
+                            <div class="info_product">
+                                <h3>Untitled Abstract IV</h3>
+                                <p>Nguyen Lam</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="gf_section-13 event_mobile" data-name="Events">
+        <div class="gf_container">
+            <div class="portfolio_body">
+                <div class="gf_flex title_portfolio" style="justify-content: center">
+                    <h2>Events</h2>
+                </div>
+                <div class="popup">
+                    <div class="portfolio_content">
+                        <div class="gf_flex box_item">
+                            <div class="item_content">
+                                <div class="item ">
+                                    <div class="bacground_image item1">
+                                        <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
+                                    </div>
+                                </div>
+                                <div class="info_product">
+                                    <h3>Untitled Abstract IV</h3>
+                                    <p>Nguyen Lam</p>
+
+                                </div>
+                            </div>
+                            <div class="item_content">
+                                <div class="item ">
+                                    <div class="bacground_image item1">
+                                        <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
+                                    </div>
+                                </div>
+                                <div class="info_product">
+                                    <h3>Untitled Abstract IV</h3>
+                                    <p>Nguyen Lam</p>
+
+                                </div>
+                            </div>
+                            <div class="item_content">
+                                <div class="item ">
+                                    <div class="bacground_image item1">
+                                        <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
+                                    </div>
+                                </div>
+                                <div class="info_product">
+                                    <h3>Untitled Abstract IV</h3>
+                                    <p>Nguyen Lam</p>
+
+                                </div>
+                            </div>
+                            <div class="item_content">
+                                <div class="item ">
+                                    <div class="bacground_image item1">
+                                        <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
+                                    </div>
+                                </div>
+                                <div class="info_product">
+                                    <h3>Untitled Abstract IV</h3>
+                                    <p>Nguyen Lam</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="show">
+                    <div class="overlay"></div>
+                    <div class="img-show">
+                        <span>X</span>
+                        <img src="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 
     <section class="gf_section-10" data-name="Footer">
         <div class="footer_content">
@@ -182,7 +522,7 @@
             $('.slide_carousel').owlCarousel({
                 items: 1,
                 loop: false,
-                dots: true
+                dots: true   
             });
 
         });
@@ -192,7 +532,7 @@
             $(".show").fadeIn();
             $(".img-show img").attr("src", $src);
         });
-
+        
         $("span, .overlay").click(function () {
             $(".show").fadeOut();
         });
@@ -206,7 +546,7 @@
         //     }
         // });
 
-        $('.gt_slide_partner').owlCarousel({
+        $('.owl-carousel').owlCarousel({
             loop: true,
             margin: 10,
             nav: true,
@@ -221,10 +561,10 @@
                 items: 1
                 },
                 600: {
-                items: 3
+                items: 1
                 },
                 1000: {
-                items: 4
+                items: 1
                 }
             }
             })
@@ -252,7 +592,7 @@
                     // if it's not already selected
                     var selectedPosition = selectedItem.index(),
                         activePosition = $('.cd-hero-slider .selected').index();
-
+                        
                     if( activePosition < selectedPosition) {
                         nextSlide($('.cd-hero-slider'), $('.cd-slider-nav'), selectedPosition);
                         nextSlide($('.dots'), $('.cd-slider-nav'), selectedPosition);
@@ -273,7 +613,7 @@
                     // if it's not already selected
                     var selectedPosition = selectedItem.index(),
                         activePosition = $('.cd-hero-slider .selected').index();
-
+                        
                     if( activePosition < selectedPosition) {
                         console.log
                         nextSlide($('.cd-hero-slider'), $('.dots'), selectedPosition);
@@ -287,15 +627,15 @@
                 }
             });
 
-
+            
             function nextSlide(container, pagination, n){
                 var visibleSlide = container.find('.selected'),
                     navigationDot = pagination.find('.selected');
-
+                
                 visibleSlide.removeClass('selected from-left from-right').addClass('is-moving').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
                     visibleSlide.removeClass('is-moving');
                 });
-
+                
                 container.children('li').eq(n).addClass('selected from-right').prevAll().addClass('move-left');
                 navigationDot.removeClass('selected')
                 pagination.find('li').eq(n).addClass('selected');
@@ -307,7 +647,7 @@
             function prevSlide(container, pagination, n){
                 var visibleSlide = container.find('.selected'),
                     navigationDot = pagination.find('.selected');
-
+                
                 visibleSlide.removeClass('selected from-left from-right').addClass('is-moving').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
                     visibleSlide.removeClass('is-moving');
                 });
@@ -368,9 +708,9 @@
             //         });
             //     });
             // });
-
-
-
+                
+            
+        
             function checkVideo(hiddenSlide, container, n) {
                 //check if a video outside the viewport is playing - if yes, pause it
                 if( hiddenSlide.find('video').length > 0 ) hiddenSlide.find('video').get(0).pause();
@@ -394,7 +734,7 @@
                 return this;
             };
         });
-
+         
     </script>
 </body>
 

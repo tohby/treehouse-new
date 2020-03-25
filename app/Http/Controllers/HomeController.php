@@ -27,8 +27,23 @@ class HomeController extends Controller
 
     }
 
+    public function about(){
+        return view('about');
+
+    }
+
+    public function contact(){
+        return view('contact');
+    }
+
     public function portfolio(){
         $portfolios = Portfolio::orderBy('created_at', 'desc')->get();
-        return view('portfolio');
+        return view('portfolio', compact('portfolios'));
     }
+
+    public function portfolio_show($id){
+        $portfolio = Portfolio::find($id);
+        return view('portfolio_view', compact('portfolio'));
+    }
+
 }

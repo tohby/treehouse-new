@@ -53,17 +53,6 @@
                             </li>
                             <li>
                                 <a href="#">News</a>
-                                <ul class="sub_menu">
-                                    <li>
-                                        <a href="#">news1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">news1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">news1</a>
-                                    </li>
-                                </ul>
                             </li>
                             <li>
                                 <a href="#">Events</a>
@@ -71,10 +60,10 @@
                         </ul>
                         <ul class="gf_flex menu_right">
                             <li>
-                                <a href="aboutme.html">About Me</a>
+                                <a href="/about">About Me</a>
                             </li>
                             <li>
-                                <a href="contact.html">Contact</a>
+                                <a href="/contact">Contact</a>
                             </li>
                         </ul>
                     </div>
