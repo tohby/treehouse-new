@@ -30,7 +30,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
+                {{-- <div class="form-group">
                     <label for="description">Time:</label>
                     <div class="form-row">
                         <div class="col">
@@ -43,7 +43,7 @@
                             </small>
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 <div class="form-group">
                     <label for="description">Gate Fee:</label>
                     <div class="input-group mb-3">
