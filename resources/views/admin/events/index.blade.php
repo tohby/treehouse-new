@@ -23,7 +23,10 @@
                     <h5 class="font-weight-bold">{{$event->name}}</h5>
                     <p>{{ Str::words($event->description, 50, '...')}}</p>
                 </div>
-                <div class="col-sm-1"></div>
+                <div class="col-sm-1 text-center">
+                    <h5 class="dd">{{Carbon\Carbon::parse($event->start_at)->format('d')}}</h5>
+                    <P class="font-weight-bold">{{Carbon\Carbon::parse($event->start_at)->format('m').' / '.Carbon\Carbon::parse($event->start_at)->format('Y') }}</P>
+                </div>
             </div>
         </div>
         @endforeach
