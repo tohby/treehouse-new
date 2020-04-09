@@ -7,7 +7,7 @@
 
             <div class="content_left">
                 <div class="image_about_me">
-                    <img src="images/photo-1487309078313-fad80c3ec1e5@3x.png">
+                    <img src="images/WANG2329.JPG">
 
                 </div>
             </div>
@@ -18,16 +18,10 @@
                     </div>
                     <div class="detail_content">
                         <p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-                            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                            aliquyam erat, sed diam voluptua. At vero eos et accusam
-                            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                            diam nonumy eirmod tempor invidunt
-
+                            I like to define myself as a simple man who has found what makes him happy. At the end of the day, a small seed with a
+                            little water grows into a giant tree. Greatness starts with simplicity. People ask me how I feel when my art is
+                            appreciated or trashed, honestly, I 100% don’t care. People will come and go; they will see what they want to see, when
+                            and if they are ready to see it. What’s important is for me to be authentic. Be who you are.
                         </p>
                         <img class="signature" src="images/g10@3x.png">
 

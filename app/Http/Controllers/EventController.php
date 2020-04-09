@@ -15,7 +15,7 @@ class EventController extends Controller
     public function index()
     {
         $date = today()->format('Y-m-d');
-        $events = Event::where('end_at', '>=', $date)->orderBy('created_at', 'desc')->simplePaginate(5);
+        $events = Event::orderBy('created_at', 'desc')->simplePaginate(5);
         return view('admin.events.index', compact('events'));
     }
 
@@ -38,8 +38,40 @@ class EventController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-
+            'name' => 'required',
+            'address' => 'string|required',
+            'description' => 'required',
+            'start_at'  => 'required|date|after:yesterday',
+            'end_at'  => 'nullable|date|after:yesterday',
+            'gate' => 'numeric',
+            'description' => 'required',
+            'image' => 'image',
         ]);
+
+        if($request->hasFile('image')){
+                $image = $request->image;
+                $fileNameWithExt = $image->getClientOriginalName();
+                //get just file name
+                $fileName = pathinfo($fileNameWithExt, PATHINFO_FILENAME);
+                //get extension
+                $extension = $image->getClientOriginalExtension();
+                //filename to store
+                $fileNameToStore = $fileName.'_'.time().'.'.$extension;
+                //image upload
+                $path = $image->storeAs('public/event_images', $fileNameToStore);
+        }
+
+        $event = Event::Create([
+            'name' => $request->input('name'),
+            'description' => $request->input('description'),
+            'image' => $fileNameToStore,
+            'address' => $request->input('address'),
+            'ticket_fee' => $request->input('fee'),
+            'start_at' => $request->input('start_at'),
+            'end_at' => $request->input('end_at'),
+        ]);
+
+        return redirect('/events')->with('success', 'New Event has been successfully added');
     }
 
     /**

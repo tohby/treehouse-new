@@ -8,22 +8,22 @@
                 @csrf
                 <div class="form-group">
                     <label for="name">Event Name:</label>
-                    <input type="text" class="form-control" name="title" aria-describedby="emailHelp"
+                    <input type="text" class="form-control" name="name" aria-describedby="emailHelp"
                         placeholder="Enter event name here" required>
                 </div>
                 <div class="form-group">
-                    <label for="description">Event Address:</label>
-                    <input type="text" class="form-control" name="description" placeholder="Enter event address here"
+                    <label for="address">Event Address:</label>
+                    <input type="text" class="form-control" name="address" placeholder="Enter event address here"
                         required>
                 </div>
                 <div class="form-group">
                     <label for="description">Event Date:</label>
                     <div class="form-row">
                         <div class="col">
-                            <input type="date" class="form-control" placeholder="From" required>
+                            <input type="date" name="start_at" class="form-control" placeholder="From" min="{{Carbon\Carbon::now()->toDateString()}}" required>
                         </div>
                         <div class="col">
-                            <input type="date" class="form-control" placeholder="To">
+                            <input type="date" name="end_at" class="form-control" placeholder="To" min="{{Carbon\Carbon::now()->toDateString()}}">
                             <small id="passwordHelpBlock" class="form-text text-muted">
                                 Leave empty for same day events.
                             </small>
@@ -45,17 +45,17 @@
                     </div>
                 </div> --}}
                 <div class="form-group">
-                    <label for="description">Gate Fee:</label>
+                    <label for="description">Ticket Fee:</label>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text">VND</span>
                         </div>
-                        <input type="text" class="form-control" aria-label="Amount (to the nearest VND)">
+                        <input type="text" name="fee" class="form-control" aria-label="Amount (to the nearest VND)">
                         <div class="input-group-append">
                             <span class="input-group-text">.00</span>
                         </div>
                     </div>
-                    <small id="passwordHelpBlock" class="form-text text-muted">
+                    <small id="helpblock" class="form-text text-muted">
                         Leaving this field empty implies that the entry fee is FREE!!!.
                     </small>
                 </div>
