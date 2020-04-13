@@ -121,7 +121,7 @@
                             <li class="">
                                 <a href="index.html">Store</a>
                             </li>
-                            <li>
+                            {{-- <li>
                                 <a href="#">News</a>
                                 <ul class="sub_menu">
                                     <li>
@@ -134,7 +134,7 @@
                                         <a href="#">news1</a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> --}}
                             <li>
                                 <a href="#">Events</a>
                             </li>

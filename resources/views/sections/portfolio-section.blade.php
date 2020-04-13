@@ -3,13 +3,13 @@
         <div class="portfolio_body">
             <div class="gf_flex title_portfolio">
                 <div class="link_next_page" style="visibility: hidden">
-                    <a href="/products">
+                    <a href="/store">
                         View All Products
                     </a>
                 </div>
                 <h2>Portfolio</h2>
                 <div class="link_next_page">
-                    <a href="/products">
+                    <a href="/store">
                         View All Products
                     </a>
                 </div>

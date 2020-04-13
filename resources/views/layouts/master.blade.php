@@ -90,7 +90,7 @@
             </div>
         </nav>
         <div class="sidenav d-none d-md-block">
-            <a class="navbar-brand" href="{{ url('/') }}">
+            <a class="navbar-brand" href="{{ url('/dashboard') }}">
                 <h1 class="h3 strong">Khanh</h1>
             </a>
             <div id="menu" class="px-3">
@@ -132,6 +132,7 @@
             })
           });
     </script>
+    @yield('scripts')
 </body>
 
 </html>

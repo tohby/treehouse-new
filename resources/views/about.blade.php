@@ -119,9 +119,9 @@
                     <div class="gf_flex nav_menu">
                         <ul class="gf_flex menu_left">
                             <li class="">
-                                <a href="index.html">Store</a>
+                                <a href="/products">Store</a>
                             </li>
-                            <li>
+                            {{-- <li>
                                 <a href="#">News</a>
                                 <ul class="sub_menu">
                                     <li>
@@ -134,9 +134,9 @@
                                         <a href="#">news1</a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> --}}
                             <li>
-                                <a href="#">Events</a>
+                                <a href="/events">Events</a>
                             </li>
                         </ul>
                         <ul class="gf_flex menu_right">

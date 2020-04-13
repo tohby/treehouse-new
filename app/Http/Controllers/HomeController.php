@@ -20,11 +20,12 @@ class HomeController extends Controller
     {
         // $carousels = Carousel::get();
         $portfolios = Portfolio::orderBy('created_at', 'desc')->take(8)->get();
-        return view('home', compact('portfolios'));
+        $events = Event::orderBy('created_at', 'desc')->take(4)->get();
+        return view('home', compact('portfolios', 'events'));
     }
 
     public function events(){
-
+        
     }
 
     public function about(){

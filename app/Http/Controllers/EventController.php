@@ -15,7 +15,7 @@ class EventController extends Controller
     public function index()
     {
         $date = today()->format('Y-m-d');
-        $events = Event::orderBy('created_at', 'desc')->simplePaginate(5);
+        $events = Event::orderBy('created_at', 'desc')->simplePaginate(4);
         return view('admin.events.index', compact('events'));
     }
 
@@ -93,7 +93,8 @@ class EventController extends Controller
      */
     public function edit(Event $event)
     {
-        //
+        $event = Event::find($event->id);
+        return view('admin.events.edit', compact($event));
     }
 
     /**
@@ -144,7 +145,7 @@ class EventController extends Controller
      */
     public function destroy(Event $event)
     {
-        $event = Portfolio::find($event->id);
+        $event = Event::find($event->id);
         $event->delete();
         return redirect('/events')->with('success', 'Event has been deleted');
     }

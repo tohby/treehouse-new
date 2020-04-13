@@ -4,4 +4,5 @@
     @include('sections/partner-section')
     @include('sections/about-section')
     @include('sections/portfolio-section')
+    @include('sections/event-section')
 @endsection

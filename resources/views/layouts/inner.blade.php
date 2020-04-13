@@ -45,11 +45,11 @@
                     <div class="gf_flex nav_menu">
                         <ul class="gf_flex menu_left">
                             <li class="active">
-                                <a href="index.html">Store</a>
+                                <a href="/store">Store</a>
                             </li>
-                            <li>
+                            {{-- <li>
                                 <a href="#">News</a>
-                            </li>
+                            </li> --}}
                             <li>
                                 <a href="#">Events</a>
                             </li>

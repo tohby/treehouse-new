@@ -7,57 +7,20 @@
             <div class="popup">
                 <div class="portfolio_content">
                     <div class="gf_flex box_item">
+                        @foreach ($events as $event)
                         <div class="item_content">
                             <div class="item ">
                                 <div class="bacground_image item1">
-                                    <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
+                                    <img src="/storage/event_images/{{$event->image}}">
                                 </div>
                             </div>
                             <div class="info_product">
                                 <h3>Untitled Abstract IV</h3>
                                 <p>Nguyen Lam</p>
-
                             </div>
                         </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item1">
-                                    <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
-                                </div>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item1">
-                                    <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
-                                </div>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item1">
-                                    <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
-                                </div>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-
+                        @endforeach
                     </div>
-
                 </div>
             </div>
             <div class="show">

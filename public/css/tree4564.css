@@ -3,6 +3,10 @@
   font-size: 40px;
 }
 
+.dropleft .dropdown-toggle::before {
+  visibility: hidden;
+}
+
 .sidenav {
   height: 100%;
   width: 270px;
