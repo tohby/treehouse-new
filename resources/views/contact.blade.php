@@ -1,5 +1,6 @@
 @extends('layouts.inner')
 @section('content')
+@include('sweetalert::alert')
 <section class="gf_section-12 div_top" data-name="Contact">
     <div class="gf_container">
         <div class="contact_background">
@@ -12,25 +13,28 @@
                     </p>
                 </div>
                 <div class="content_right">
-                    <div class="contact_form">
-                        <div class="contact_form_group">
-                            <p class="contact_label" style="padding-top: 0">Name</p>
-                            <input type="text" placeholder="Stephen">
+                    <form method="POST" action="{{ action("ContactMessageController@send") }}">
+                        @csrf
+                        <div class="contact_form">
+                            <div class="contact_form_group">
+                                <p class="contact_label" style="padding-top: 0">Name</p>
+                                <input type="text" name="name" placeholder="Your name">
+                            </div>
+                            <div class="contact_form_group">
+                                <p class="contact_label">Email:</p>
+                                <input type="email" name="email" placeholder="Your Email">
+                            </div>
+                            <div class="contact_form_group">
+                                <p class="contact_label">Message</p>
+                                <textarea name="message" placeholder="Drop a message"></textarea>
+                            </div>
+                            <div class="button_submit">
+                                <button type="submit">
+                                    Send
+                                </button>
+                            </div>
                         </div>
-                        <div class="contact_form_group">
-                            <p class="contact_label">Email:</p>
-                            <input type="email" placeholder="Stephenatere9@gmail.com">
-                        </div>
-                        <div class="contact_form_group">
-                            <p class="contact_label">Message</p>
-                            <textarea placeholder="Drop a message"></textarea>
-                        </div>
-                        <div class="button_submit">
-                            <button type="submit">
-                                Buy Now
-                            </button>
-                        </div>
-                    </div>
+                    </form>
                 </div>
 
             </div>

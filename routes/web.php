@@ -16,6 +16,7 @@ Auth::routes(['register' => false]);
 Route::get('/', 'HomeController@index');
 Route::get('/about', 'HomeController@about');
 Route::get('/contact', 'HomeController@contact');
+Route::post('/contact/send', 'ContactMessageController@send');
 Route::get('/store', 'HomeController@portfolio');
 Route::get('/product/{id}', 'HomeController@portfolio_show');
 
