@@ -57,10 +57,10 @@
                             <div class="d-md-none">
                                 <a class="nav-link" href="/dashboard">Dashboard</a>
                                 {{--  <a class="nav-link" href="/carousel">Carousel</a>  --}}
-                                <a class="nav-link" href="/news">Portfolio</a>
+                                <a class="nav-link" href="/portfolio">Portfolio</a>
                                 <a class="nav-link" href="/events">Events</a>
-                                <a class="nav-link" href="/blog">Blog</a>
-                                <a class="nav-link" href="/#">Mailing list</a>
+                                <a class="nav-link" href="/orders">Orders</a>
+                                <a class="nav-link" href="/messages">Messages</a>
                                 <a class="nav-link" href="/users">Users</a>
                             </div>
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
@@ -91,15 +91,15 @@
         </nav>
         <div class="sidenav d-none d-md-block">
             <a class="navbar-brand" href="{{ url('/dashboard') }}">
-                <h1 class="h3 strong">Khanh</h1>
+                <h1 class="h3 logo">Khanh</h1>
             </a>
             <div id="menu" class="px-3">
                 <a href="/dashboard" class="{{ request()->is('dashboard') || request()->is('dashboard/*') ? 'active' : '' }}"> Dashboard</a>
                 {{--  <a href="/carousel" class="{{ request()->is('carousel') || request()->is('carousel/*')  ? 'active' : '' }}"></i>Carousel</a>  --}}
                 <a href="/portfolio" class="{{ request()->is('portfolio') || request()->is('portfolio/*') ? 'active' : '' }}"></i>Portfolio</a>
                 <a href="/events" class="{{ request()->is('events') || request()->is('events/*') ? 'active' : '' }}"></i>Events</a>
-                <a href="/blog" class="{{ request()->is('blog') || request()->is('blog/*') ? 'active' : '' }}"></i>Blog</a>
-                <a href="/mailing-list" class="{{ request()->is('mailing-list') ? 'active' : '' }}"></i>Mailing list</a>
+                <a href="/orders" class="{{ request()->is('orders') || request()->is('orders/*') ? 'active' : '' }}"></i>Orders</a>
+                <a href="/messages" class="{{ request()->is('messages') || request()->is('messages/*') ? 'active' : '' }}"></i>Messages</a>
                 @can ('manage-users')
                     <a href="/users" class="{{ request()->is('users') || request()->is('users/*') ? 'active' : '' }}">Users</a>
                 @endcan
