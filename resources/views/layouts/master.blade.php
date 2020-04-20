@@ -90,10 +90,10 @@
             </div>
         </nav>
         <div class="sidenav d-none d-md-block">
-            <a class="navbar-brand" href="{{ url('/dashboard') }}">
+            <a class="navbar-brand px-4" href="{{ url('/dashboard') }}">
                 <h1 class="h3 logo">Khanh</h1>
             </a>
-            <div id="menu" class="px-3">
+            <div id="menu" class="px-3 my-4">
                 <a href="/dashboard" class="{{ request()->is('dashboard') || request()->is('dashboard/*') ? 'active' : '' }}"> Dashboard</a>
                 {{--  <a href="/carousel" class="{{ request()->is('carousel') || request()->is('carousel/*')  ? 'active' : '' }}"></i>Carousel</a>  --}}
                 <a href="/portfolio" class="{{ request()->is('portfolio') || request()->is('portfolio/*') ? 'active' : '' }}"></i>Portfolio</a>

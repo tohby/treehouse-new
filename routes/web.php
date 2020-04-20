@@ -21,7 +21,6 @@ Route::get('/store', 'HomeController@portfolio');
 Route::get('/product/{id}', 'HomeController@portfolio_show');
 
 Route::group(['middleware' => 'auth'], function() {
-    // Route::get('/home', 'HomeController@index')->name('home');
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
     Route::resource('/users', 'UsersController')->except(['show']);
     // Route::resource('carousel', 'CarouselController')->except(['show', 'edit']);
@@ -30,4 +29,5 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('change-password', 'ChangePasswordController@get');
     Route::post('change-password', 'ChangePasswordController@change');
     // Route::resource('/events', 'EventController');
+    Route::get('messages', 'MessagesController@index');
 });

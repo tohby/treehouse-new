@@ -1,6 +1,24 @@
-@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap);.dd {
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap);@import url(https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap);@import url(https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap);@import url(https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap);.dd {
   font-family: "Playfair Display", serif;
   font-size: 40px;
+}
+
+.h6 {
+  font-family: "Baloo Paaji 2", cursive;
+  font-weight: 400;
+}
+
+.hello {
+  font-family: "Baloo Paaji 2", cursive;
+}
+
+.greeting {
+  font-family: "Lora", serif;
+  font-size: 40px;
+}
+
+.logo {
+  font-weight: 700;
 }
 
 .dropleft .dropdown-toggle::before {
@@ -53,7 +71,19 @@
 }
 
 body {
-  background-color: #e0e0e0;
+  background-color: #e0e0e056;
+}
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  background-color: #101010;
+  border-radius: 50%;
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
 }
 
 .transparent {
@@ -97,6 +127,18 @@ nav {
      object-fit: cover;
 }
 
+.card-header {
+  background-color: white;
+}
+
+.card-header > :first-child {
+  flex: 1;
+}
+
+.card-header-title {
+  margin-bottom: 0;
+}
+
 .news-img {
   width: 100%;
   height: 15vw;
@@ -114,5 +156,57 @@ nav {
 .trash {
   font-size: 70px;
   color: #ff6c00;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #12263f;
+  background-color: transparent;
+  border-color: transparent transparent #2c7be5;
+}
+
+.header-tabs .nav-link {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.nav-tabs .nav-link {
+  border-bottom: 1px solid transparent;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-top-width: 0;
+}
+
+.nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.nav-link:hover {
+  border-color: transparent transparent transparent !important;
+}
+
+a {
+  color: #2c7be5;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.badge-soft-secondary {
+  color: #6e84a3;
+  background-color: #e2e6ed;
+}
+
+.badge-pill {
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+  border-radius: 10rem;
+}
+
+.badge {
+  padding: 0.33em 0.5em;
+  font-size: 75%;
+  font-weight: 400;
 }
 
