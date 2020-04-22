@@ -14,18 +14,30 @@ class MessagesController extends Controller
         return view('admin/messages/index', compact('messages', 'read', 'unread'));
     }
 
+    /**
+     * show message content
+     */
     public function show(Message $message){
 
     }
 
+    /**
+     * show read messages only
+     */
     public function read(){
 
     }
 
+    /**
+     * show unread messages
+     */
     public function unread(){
 
     }
 
+    /**
+     * function not in use in the main time
+     */
     public function delete(){
         
     }

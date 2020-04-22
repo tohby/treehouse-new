@@ -18,14 +18,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // $carousels = Carousel::get();
         $portfolios = Portfolio::orderBy('created_at', 'desc')->take(8)->get();
         $events = Event::orderBy('created_at', 'desc')->take(4)->get();
         return view('home', compact('portfolios', 'events'));
     }
 
     public function events(){
-        
+        $events = Event::orderBy('created_at', 'desc')->simplePaginate(12);
+        return $events;
     }
 
     public function about(){
@@ -38,13 +38,26 @@ class HomeController extends Controller
     }
 
     public function portfolio(){
-        $portfolios = Portfolio::orderBy('created_at', 'desc')->get();
+        $portfolios = Portfolio::orderBy('created_at', 'desc')->simplePaginate(12);
         return view('portfolio', compact('portfolios'));
     }
+    
 
     public function portfolio_show($id){
         $portfolio = Portfolio::find($id);
-        return view('portfolio_view', compact('portfolio'));
+        $events = Event::orderBy('created_at', 'desc')->take(4)->get();
+        $portfolios = Portfolio::whereNotIn('id', $portfolio)->orderBy('created_at', 'desc')->take(4)->get();
+        return view('portfolio_view', compact('portfolio', 'events', 'portfolios'));
+    }
+
+    public function order($id){
+        $portfolio = Portfolio::find($id);
+        $portfolios = Portfolio::whereNotIn('id', $portfolio)->orderBy('created_at', 'desc')->take(8)->get();
+        return view('portfolio_view', compact('portfolio', 'portfolios'));
+    }
+
+    public function placeOrder(Request $request){
+
     }
 
 }

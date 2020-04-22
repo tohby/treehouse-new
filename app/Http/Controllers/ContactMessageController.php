@@ -23,6 +23,5 @@ class ContactMessageController extends Controller
 
         Alert::success('Message Sent', 'Thank you for getting in touch, we will get back to you shortly.');
         return redirect('/contact');
-
     }
 }

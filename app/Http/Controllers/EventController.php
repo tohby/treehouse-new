@@ -15,7 +15,7 @@ class EventController extends Controller
     public function index()
     {
         $date = today()->format('Y-m-d');
-        $events = Event::orderBy('created_at', 'desc')->simplePaginate(4);
+        $events = Event::orderBy('created_at', 'desc')->simplePaginate(12);
         return view('admin.events.index', compact('events'));
     }
 
@@ -45,7 +45,7 @@ class EventController extends Controller
             'end_at'  => 'nullable|date|after:yesterday',
             'gate' => 'numeric',
             'description' => 'required',
-            'image' => 'image',
+            'image.*.file' => 'required|image',
         ]);
 
         if($request->hasFile('image')){
@@ -108,13 +108,18 @@ class EventController extends Controller
     {
         $request->validate([
             'image.*.file' => 'required|image',
-            'title' => 'required',
+            'name' => 'required',
+            'address' => 'string|required',
+            'description' => 'required',
+            'start_at'  => 'required|date|after:yesterday',
+            'end_at'  => 'nullable|date|after:yesterday',
+            'gate' => 'numeric',
             'description' => 'required',
         ]);
 
-        $portfolio = Portfolio::find($portfolio->id);
-        $portfolio->title = $request->input('title');
-        $portfolio->description = $request->input('description');
+        $event = Event::find($portfolio->id);
+        $event->title = $request->input('title');
+        $event->description = $request->input('description');
 
         if($request->hasFile('image')){
             $image = $request->file('image');
@@ -132,7 +137,7 @@ class EventController extends Controller
                 'image' => $fileNameToStore,
             ]);
         }
-        $portfolio->save();
+        $event->save();
 
         return redirect('/portfolio')->with('success', 'Item has been successfully updated');
     }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khanh | Product</title>
+    <title></title>
 
 
 
@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
 
-    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/global.css')}}">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/global.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -111,15 +111,15 @@
             <div class="">
                 <div class="gf_flex menu_content">
                     <div class="logo">
-                        <h1 class="logo_text">
-                            <p class="text_large">Kanh</p>
-                            <p class="text_small"> Hanoi, Vietnam</p>
-                        </h1>
+                        <a href="/" class="logo_text">
+                            <p class="text_large">Khan</p>
+                            <p class="text_small"> Tree House, Hanoi </p>
+                        </a>
                     </div>
                     <div class="gf_flex nav_menu">
                         <ul class="gf_flex menu_left">
                             <li class="">
-                                <a href="/store">Store</a>
+                                <a href="/products">Store</a>
                             </li>
                             {{-- <li>
                                 <a href="#">News</a>
@@ -169,11 +169,21 @@
                 <div class="content_left">
                     <div class="image_about_me">
                         <div class="owl-carousel gt_slide_partner">
-                            @foreach ($portfolio->images as $image)
-                                <div class="item gt_product-carousel--item">
-                                    <img src="/storage/post_images/{{$image->image}}">
-                                </div>
-                            @endforeach
+                            <div class="item gt_product-carousel--item">
+                                <img src="./images/photo-1487309078313-fad80c3ec1e5@3x.png">
+                            </div>
+                            <div class="item gt_product-carousel--item">
+                                <img src="./images/photo-1487309078313-fad80c3ec1e5@3x.png">
+                            </div>
+                            <div class="item gt_product-carousel--item">
+                                <img src="./images/photo-1487309078313-fad80c3ec1e5@3x.png">
+                            </div>
+                            <div class="item gt_product-carousel--item">
+                                <img src="./images/photo-1487309078313-fad80c3ec1e5@3x.png">
+                            </div>
+                            <div class="item gt_product-carousel--item">
+                                <img src="./images/photo-1487309078313-fad80c3ec1e5@3x.png">
+                            </div>
                         </div>
                         <div class="image_mobile">
                             <img src="./images/photo-1487309078313-fad80c3ec1e5@3x.png">
@@ -205,9 +215,127 @@
         </div>
     </section>
 
-    @include('sections/similar')
+    <section class="gf_section-3 list_product_mobile" data-name="Portfolio">
+        <div class="gf_container">
+            <div class="portfolio_body">
+                <div class="gf_flex title_portfolio" style="justify-content: center">
+                    <h2>Similar Products</h2>
+                </div>
+                <div class="portfolio_content">
+                    <div class="gf_flex box_item">
+                        <div class="item_content">
+                            <div class="item ">
+                                <div class="bacground_image item1"></div>
+                                <a href="#" class="button_order">
+                                    Order Paint
+                                </a>
+                            </div>
+                            <div class="info_product">
+                                <h3>Untitled Abstract IV</h3>
+                                <p>Nguyen Lam</p>
 
-    @include('sections/event-section')
+                            </div>
+                        </div>
+                        <div class="item_content">
+                            <div class="item ">
+                                <div class="bacground_image item1"></div>
+                                <a href="#" class="button_order">
+                                    Order Paint
+                                </a>
+                            </div>
+                            <div class="info_product">
+                                <h3>Untitled Abstract IV</h3>
+                                <p>Nguyen Lam</p>
+
+                            </div>
+                        </div>
+                        <div class="item_content">
+                            <div class="item ">
+                                <div class="bacground_image item1"></div>
+                                <a href="#" class="button_order">
+                                    Order Paint
+                                </a>
+                            </div>
+                            <div class="info_product">
+                                <h3>Untitled Abstract IV</h3>
+                                <p>Nguyen Lam</p>
+
+                            </div>
+                        </div>
+                        <div class="item_content">
+                            <div class="item ">
+                                <div class="bacground_image item2"></div>
+                                <a href="#" class="button_order">
+                                    Order Paint
+                                </a>
+                            </div>
+                            <div class="info_product">
+                                <h3>Untitled Abstract IV</h3>
+                                <p>Nguyen Lam</p>
+
+                            </div>
+                        </div>
+                        <div class="item_content">
+                            <div class="item ">
+                                <div class="bacground_image item3"></div>
+                                <a href="#" class="button_order">
+                                    Order Paint
+                                </a>
+                            </div>
+                            <div class="info_product">
+                                <h3>Untitled Abstract IV</h3>
+                                <p>Nguyen Lam</p>
+
+                            </div>
+                        </div>
+                        <div class="item_content">
+                            <div class="item ">
+                                <div class="bacground_image item1"></div>
+                                <a href="#" class="button_order">
+                                    Order Paint
+                                </a>
+                            </div>
+                            <div class="info_product">
+                                <h3>Untitled Abstract IV</h3>
+                                <p>Nguyen Lam</p>
+
+                            </div>
+                        </div>
+                        <div class="item_content">
+                            <div class="item ">
+                                <div class="bacground_image item2"></div>
+                                <a href="#" class="button_order">
+                                    Order Paint
+                                </a>
+                            </div>
+                            <div class="info_product">
+                                <h3>Untitled Abstract IV</h3>
+                                <p>Nguyen Lam</p>
+
+                            </div>
+                        </div>
+                        <div class="item_content">
+                            <div class="item ">
+                                <div class="bacground_image item3"></div>
+                                <a href="#" class="button_order">
+                                    Order Paint
+                                </a>
+                            </div>
+                            <div class="info_product">
+                                <h3>Untitled Abstract IV</h3>
+                                <p>Nguyen Lam</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 
     <section class="gf_section-10" data-name="Footer">
         <div class="footer_content">
