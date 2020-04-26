@@ -12,8 +12,8 @@ class MakeOrderController extends Controller
 {
     public function order(Request $request){
         $request->validate([
-            'portfolio_id' => 'required|numeric',
-            'number_of_products' => 'required|numeric',
+            'product_id' => 'required|numeric',
+            'quantity' => 'required|numeric',
             'name' => 'required',
             'note' => 'nullable',
             'address' => 'required',
@@ -21,18 +21,19 @@ class MakeOrderController extends Controller
             'phone' => 'required_without:email',
         ]);
         // create order number
-        $latestOrder = App\Order::orderBy('created_at','DESC')->first();
+        $latestOrder = Order::orderBy('created_at','DESC')->first();
         if($latestOrder == null){
             $orderId = 0;
         }else{
             $orderId = $latestOrder->id;
         }
-        $orderNumber = '#knh'.str_pad($orderId + 1, 5, "0", STR_PAD_LEFT);
+        $orderNumber = '#knh'.str_pad($orderId + 1, 7, "0", STR_PAD_LEFT);
 
         $order = Order::create([
             'order_code' => $orderNumber,
-            'portfolio_id' => $request->input('portfolio_id'),
-            'number_of_products' => $request->input('number_of_products'),
+            'portfolio_id' => $request->input('product_id'),
+            'order_status' => 1,
+            'number_of_products' => $request->input('quantity'),
             'name' => $request->input('name'),
             'note' => $request->input('note'),
             'address' => $request->input('address'),

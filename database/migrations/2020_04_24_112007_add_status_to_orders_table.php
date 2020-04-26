@@ -14,7 +14,7 @@ class AddStatusToOrdersTable extends Migration
     public function up()
     {
         Schema::table('orders', function (Blueprint $table) {
-            $table->string('status')->after('order_code');
+            $table->integer('order_status')->after('order_code');
         });
     }
 
@@ -26,7 +26,7 @@ class AddStatusToOrdersTable extends Migration
     public function down()
     {
         Schema::table('orders', function (Blueprint $table) {
-            $table->dropColumn('status');
+            $table->dropColumn('order_status');
         });
     }
 }

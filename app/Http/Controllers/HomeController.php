@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Carousel;
 use App\Portfolio;
 use App\Event;
+use App\Order;
 
 class HomeController extends Controller
 {
@@ -55,10 +56,6 @@ class HomeController extends Controller
         $events = Event::orderBy('created_at', 'desc')->take(4)->get();
         $portfolios = Portfolio::whereNotIn('id', $portfolio)->orderBy('created_at', 'desc')->take(8)->get();
         return view('order', compact('portfolio', 'portfolios', 'events'));
-    }
-
-    public function placeOrder(Request $request){
-
     }
 
 }

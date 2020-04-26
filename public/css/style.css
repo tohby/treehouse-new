@@ -1360,7 +1360,7 @@
 }
 
 .gf_section-6 .content_left {
-  width: 50%;
+  width: 45%;
 }
 
 .gf_section-6 .content_left .image_about_me {
@@ -1661,6 +1661,7 @@
   font-size: 16px;
   color: #000000;
   padding: 24px 0 18px 0;
+  margin-bottom: 18px;
 }
 
 .gf_section-12 .contact_content .content_right .contact_form_group input {
@@ -2127,5 +2128,151 @@
   .gf_section-10 .menu_footer .nav_content:nth-of-type(4n) {
     display: none;
   }
+}
+
+.form_content_right {
+  width: 45%;
+}
+
+.form_content_right .contact_form_group .contact_label {
+  font-size: 16px;
+  color: #000000;
+  padding: 24px 0 18px 0;
+}
+
+.form_content_right .contact_form_group input {
+  width: 609px;
+  padding: 25px 31px;
+  font-size: 20px;
+  color: #000000;
+  background: #eaeaea;
+  border: none;
+  border-radius: 5px;
+}
+
+.form_content_right .contact_form_group input::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: 505050;
+  font-size: 16px;
+  opacity: 1;
+  /* Firefox */
+}
+
+.form_content_right .contact_form_group input::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: 505050;
+  font-size: 16px;
+  opacity: 1;
+  /* Firefox */
+}
+
+.form_content_right .contact_form_group input:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: 505050;
+  font-size: 16px;
+  opacity: 1;
+  /* Firefox */
+}
+
+.form_content_right .contact_form_group input::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: 505050;
+  font-size: 16px;
+  opacity: 1;
+  /* Firefox */
+}
+
+.form_content_right .contact_form_group input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: 505050;
+  font-size: 16px;
+  opacity: 1;
+  /* Firefox */
+}
+
+.form_content_right .contact_form_group input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #505050;
+}
+
+.form_content_right .contact_form_group input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: 505050;
+}
+
+.form_content_right .contact_form_group textarea {
+  width: 609px;
+  padding: 25px 31px;
+  font-size: 20px;
+  color: #000000;
+  background: #eaeaea;
+  border: none;
+  border-radius: 5px;
+}
+
+.form_content_right .contact_form_group textarea::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: 505050;
+  font-size: 16px;
+  opacity: 1;
+  /* Firefox */
+}
+
+.form_content_right .contact_form_group textarea::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: 505050;
+  font-size: 16px;
+  opacity: 1;
+  /* Firefox */
+}
+
+.form_content_right .contact_form_group textarea:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: 505050;
+  font-size: 16px;
+  opacity: 1;
+  /* Firefox */
+}
+
+.form_content_right .contact_form_group textarea::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: 505050;
+  font-size: 16px;
+  opacity: 1;
+  /* Firefox */
+}
+
+.form_content_right .contact_form_group textarea::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: 505050;
+  font-size: 16px;
+  opacity: 1;
+  /* Firefox */
+}
+
+.form_content_right .contact_form_group textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #505050;
+}
+
+.form_content_right .contact_form_group textarea::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: 505050;
+}
+
+.form_content_right .button_submit {
+  margin-top: 44px;
+}
+
+.form_content_right .button_submit button {
+  float: right;
+  font-size: 20px;
+  font-family: nexa;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff;
+  background: #ff6c00;
+  padding: 18px 40px;
+  border-radius: 5px;
 }
 

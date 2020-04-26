@@ -1334,7 +1334,7 @@ Javascript disabled
       }
   }
   .content_left {
-      width: 50%;
+      width: 45%;
       .image_about_me {
           padding: 0 15px;
           img {
@@ -1605,6 +1605,7 @@ Javascript disabled
                   font-size: 16px;
                   color: #000000;
                   padding: 24px 0 18px 0;
+                  margin-bottom: 18px;
               }
               input {
                   width: 609px;
@@ -1934,3 +1935,76 @@ Javascript disabled
       }
   }
 }
+
+      .form_content_right {
+          width: 45%;
+          .contact_form_group {
+              .contact_label {
+                  font-size: 16px;
+                  color: #000000;
+                  padding: 24px 0 18px 0;
+              }
+              input {
+                  width: 609px;
+                  padding: 25px 31px;
+                  font-size: 20px;
+                  color: #000000;
+                  background: #eaeaea;
+                  border: none;
+                  border-radius: 5px;
+                  &::placeholder {
+                      /* Chrome, Firefox, Opera, Safari 10.1+ */
+                      color: 505050;
+                      font-size: 16px;
+                      opacity: 1;
+                      /* Firefox */
+                  }
+                  &:-ms-input-placeholder {
+                      /* Internet Explorer 10-11 */
+                      color: #505050;
+                  }
+                  &::-ms-input-placeholder {
+                      /* Microsoft Edge */
+                      color: 505050;
+                  }
+              }
+              textarea {
+                  width: 609px;
+                  padding: 25px 31px;
+                  font-size: 20px;
+                  color: #000000;
+                  background: #eaeaea;
+                  border: none;
+                  border-radius: 5px;
+                  &::placeholder {
+                      /* Chrome, Firefox, Opera, Safari 10.1+ */
+                      color: 505050;
+                      font-size: 16px;
+                      opacity: 1;
+                      /* Firefox */
+                  }
+                  &:-ms-input-placeholder {
+                      /* Internet Explorer 10-11 */
+                      color: #505050;
+                  }
+                  &::-ms-input-placeholder {
+                      /* Microsoft Edge */
+                      color: 505050;
+                  }
+              }
+          }
+          .button_submit {
+              margin-top: 44px;
+              button {
+                  float: right;
+                  font-size: 20px;
+                  font-family: nexa;
+                  font-weight: 700;
+                  line-height: 30px;
+                  color: #fff;
+                  background: #ff6c00;
+                  padding: 18px 40px;
+                  border-radius: 5px;
+              }
+          }
+      }

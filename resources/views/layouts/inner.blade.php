@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khanh | Product</title>
+    <title>Khanh Arts</title>
 
 
 
@@ -18,6 +18,7 @@
 
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/global.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/carousel.css')}}">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -28,81 +29,6 @@
     <script src="https://d1um8515vdn9kb.cloudfront.net/libs/js/owl.carousel.min.js"></script>
 
 
-    <style>
-        /*Carousel Gallery*/
-        .carousel-gallery {
-            margin: 50px 0;
-            padding: 0 30px;
-        }
-
-        .carousel-gallery .swiper-slide a {
-            display: block;
-            width: 100%;
-            height: 213px;
-            overflow: hidden;
-            position: relative;
-            -webkit-box-shadow: 3px 2px 20px 0px rgba(0, 0, 0, 0.2);
-            -moz-box-shadow: 3px 2px 20px 0px rgba(0, 0, 0, 0.2);
-            box-shadow: 3px 2px 20px 0px rgba(0, 0, 0, 0.2);
-        }
-
-        .carousel-gallery .swiper-slide a:hover .image .overlay {
-            opacity: 1;
-        }
-
-        .carousel-gallery .swiper-slide a .image {
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center center;
-            border-radius: 5px;
-        }
-
-        .carousel-gallery .swiper-slide a .image .overlay {
-            width: 100%;
-            height: 100%;
-            background-color: rgba(20, 20, 20, 0.8);
-            text-align: center;
-            opacity: 0;
-            -webkit-transition: all 0.2s linear;
-            -o-transition: all 0.2s linear;
-            transition: all 0.2s linear;
-        }
-
-        .carousel-gallery .swiper-slide a .image .overlay em {
-            color: #fff;
-            font-size: 26px;
-            position: relative;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            -o-transform: translateY(-50%);
-            transform: translateY(-50%);
-            display: inline-block;
-        }
-
-        .carousel-gallery .swiper-pagination {
-            position: relative;
-            bottom: auto;
-            text-align: center;
-            margin-top: 25px;
-        }
-
-        .carousel-gallery .swiper-pagination .swiper-pagination-bullet {
-            -webkit-transition: all 0.2s linear;
-            -o-transition: all 0.2s linear;
-            transition: all 0.2s linear;
-        }
-
-        .carousel-gallery .swiper-pagination .swiper-pagination-bullet:hover {
-            opacity: 0.7;
-        }
-
-        .carousel-gallery .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-            background-color: #d63031;
-            transform: scale(1.1, 1.1);
-        }
-    </style>
 </head>
 
 <body>
@@ -111,36 +37,25 @@
             <div class="">
                 <div class="gf_flex menu_content">
                     <div class="logo">
-                        <h1 class="logo_text">
-                            <p class="text_large">Kanh</p>
-                            <p class="text_small"> Hanoi, Vietnam</p>
-                        </h1>
+                        <a href="/" class="logo_text">
+                            <p class="text_large">Khan</p>
+                            <p class="text_small"> Tree House, Hanoi </p>
+                        </a>
                     </div>
                     <div class="gf_flex nav_menu">
                         <ul class="gf_flex menu_left">
-                            <li class="">
+                            <li class="active">
                                 <a href="/store">Store</a>
                             </li>
                             {{-- <li>
                                 <a href="#">News</a>
-                                <ul class="sub_menu">
-                                    <li>
-                                        <a href="#">news1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">news1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">news1</a>
-                                    </li>
-                                </ul>
                             </li> --}}
                             <li>
                                 <a href="/events">Events</a>
                             </li>
                         </ul>
                         <ul class="gf_flex menu_right">
-                            <li class="active">
+                            <li>
                                 <a href="/about">About Me</a>
                             </li>
                             <li>
@@ -148,56 +63,14 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="icon_menu">
-                        <div class="line_icon">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
 
     </section>
-
-
-    <section class="gf_section-11 div_top" data-name="AboutmeDetail">
-        <div class="gf_container">
-            <div class="gf_flex about_me_content">
-
-                <div class="content_left">
-                    <div class="image_about_me">
-                        <div class="owl-carousel gt_slide_partner">
-                            @foreach ($portfolio->images as $image)
-                            <div class="item gt_product-carousel--item">
-                                <img src="/storage/post_images/{{$image->image}}">
-                            </div>
-                            @endforeach
-                        </div>
-                    </div>
-                </div>
-                <div class="content_right">
-                    <div class="content_text">
-                        <div class="title_content">
-                            <span>Product Details</span>
-                        </div>
-                        <div class="detail_content">
-                            <p>{{$portfolio->description}}</p>
-                            <a href="/product/{{$portfolio->id}}/order" class="button">
-                                Order Paint
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    @include('sections/similar')
-
-    @include('sections/event-section')
+    <main>
+        @yield('content')
+    </main>
 
     <section class="gf_section-10" data-name="Footer">
         <div class="footer_content">
@@ -309,7 +182,7 @@
             $('.slide_carousel').owlCarousel({
                 items: 1,
                 loop: false,
-                dots: true   
+                dots: true
             });
 
         });
@@ -319,12 +192,21 @@
             $(".show").fadeIn();
             $(".img-show img").attr("src", $src);
         });
-        
+
         $("span, .overlay").click(function () {
             $(".show").fadeOut();
         });
 
-        $('.owl-carousel').owlCarousel({
+        // $(window).scroll(function () {
+        //     if ($(document).scrollTop() > 1) {
+        //         $('.menu_body').addClass("gt_sticky-header");
+        //         $('.menu_body').delay(10).fadeIn(400);
+        //     } else {
+        //         $('.menu_body').removeClass("gt_sticky-header");
+        //     }
+        // });
+
+        $('.gt_slide_partner').owlCarousel({
             loop: true,
             margin: 10,
             nav: true,
@@ -339,10 +221,10 @@
                 items: 1
                 },
                 600: {
-                items: 1
+                items: 3
                 },
                 1000: {
-                items: 1
+                items: 4
                 }
             }
             })
@@ -370,7 +252,7 @@
                     // if it's not already selected
                     var selectedPosition = selectedItem.index(),
                         activePosition = $('.cd-hero-slider .selected').index();
-                        
+
                     if( activePosition < selectedPosition) {
                         nextSlide($('.cd-hero-slider'), $('.cd-slider-nav'), selectedPosition);
                         nextSlide($('.dots'), $('.cd-slider-nav'), selectedPosition);
@@ -391,7 +273,7 @@
                     // if it's not already selected
                     var selectedPosition = selectedItem.index(),
                         activePosition = $('.cd-hero-slider .selected').index();
-                        
+
                     if( activePosition < selectedPosition) {
                         console.log
                         nextSlide($('.cd-hero-slider'), $('.dots'), selectedPosition);
@@ -405,15 +287,15 @@
                 }
             });
 
-            
+
             function nextSlide(container, pagination, n){
                 var visibleSlide = container.find('.selected'),
                     navigationDot = pagination.find('.selected');
-                
+
                 visibleSlide.removeClass('selected from-left from-right').addClass('is-moving').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
                     visibleSlide.removeClass('is-moving');
                 });
-                
+
                 container.children('li').eq(n).addClass('selected from-right').prevAll().addClass('move-left');
                 navigationDot.removeClass('selected')
                 pagination.find('li').eq(n).addClass('selected');
@@ -425,7 +307,7 @@
             function prevSlide(container, pagination, n){
                 var visibleSlide = container.find('.selected'),
                     navigationDot = pagination.find('.selected');
-                
+
                 visibleSlide.removeClass('selected from-left from-right').addClass('is-moving').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
                     visibleSlide.removeClass('is-moving');
                 });
@@ -470,7 +352,7 @@
                     }
                 }
             }); /*http://idangero.us/swiper/api/*/
-        
+
             function checkVideo(hiddenSlide, container, n) {
                 //check if a video outside the viewport is playing - if yes, pause it
                 if( hiddenSlide.find('video').length > 0 ) hiddenSlide.find('video').get(0).pause();
@@ -494,7 +376,7 @@
                 return this;
             };
         });
-         
+
     </script>
 </body>
 
