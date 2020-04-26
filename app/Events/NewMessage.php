@@ -19,9 +19,9 @@ class NewMessage
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($message)
     {
-        //
+        $this->message = $message;
     }
 
 }

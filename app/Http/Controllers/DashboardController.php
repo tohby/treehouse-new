@@ -12,7 +12,7 @@ class DashboardController extends Controller
 {
     public function index(){
         $portfolio = Portfolio::get();
-        $messages = Contact::where('is_read', 0)->get();
+        $messages = Contact::where('is_read', 0)->orderBy('is_read', 'asc')->orderBy('created_at', 'desc')->get();
         $date = today()->format('Y-m-d');
         $events = Event::where('start_at', '>=', $date)->get();
         return view('admin/index', compact('messages', 'portfolio', 'events'));

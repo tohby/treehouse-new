@@ -1564,6 +1564,17 @@
   color: #fff;
 }
 
+.gf_section-11 .content_right .content_text .detail_content .button {
+  float: right;
+  border-radius: 5px;
+  margin-top: 28px;
+  background: #ff6c00;
+  font-size: 20px;
+  padding: 18px 46px;
+  color: #fff;
+  text-decoration: none;
+}
+
 .gf_section-11 .image_mobile {
   display: none;
 }

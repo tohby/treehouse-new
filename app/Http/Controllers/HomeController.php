@@ -52,8 +52,9 @@ class HomeController extends Controller
 
     public function order($id){
         $portfolio = Portfolio::find($id);
+        $events = Event::orderBy('created_at', 'desc')->take(4)->get();
         $portfolios = Portfolio::whereNotIn('id', $portfolio)->orderBy('created_at', 'desc')->take(8)->get();
-        return view('portfolio_view', compact('portfolio', 'portfolios'));
+        return view('order', compact('portfolio', 'portfolios', 'events'));
     }
 
     public function placeOrder(Request $request){

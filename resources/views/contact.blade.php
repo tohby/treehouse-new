@@ -26,7 +26,7 @@
                             </div>
                             <div class="contact_form_group">
                                 <p class="contact_label">Message</p>
-                                <textarea name="message" placeholder="Drop a message"></textarea>
+                                <textarea name="message" rows="5" placeholder="Drop a message"></textarea>
                             </div>
                             <div class="button_submit">
                                 <button type="submit">

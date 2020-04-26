@@ -25,7 +25,7 @@
 </head>
 
 <body class="{{ request()->is('messages') || request()->is('messages/*') ? 'no-overflow' : '' }}">
-    <div id="app">
+    <div id="app" class="mb-4">
         <nav class="navbar navbar-expand-md navbar-light fixed-top">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -65,7 +65,7 @@
                             </div>
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                {{ Auth::user()->firstname }} <span class="caret"></span>
+                                {{ Auth::user()->firstname }} <i class="fas fa-caret-down"></i>
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">

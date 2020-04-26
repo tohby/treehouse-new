@@ -41,8 +41,8 @@ class MessageReceived extends Notification
     public function toMail($notifiable)
     {
         $message = $this->message;
-        $url = url('/messages/'.$this->message->id);
-        return (new MailMessage)->markdown('mail.message.received');
+        $url = url('/messages/');
+        return (new MailMessage)->subject('New Message')->markdown('mail.message.received', ['url' => $url]);
     }
 
     /**

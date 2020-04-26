@@ -4,7 +4,9 @@ namespace App\Providers;
 
 use Illuminate\Auth\Events\Registered;
 use App\Events\MessageRead;
+use App\Events\NewMessage;
 use App\Listeners\MarkMessageAsRead;
+use App\Listeners\NewMessageNotification;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Event;
@@ -22,6 +24,9 @@ class EventServiceProvider extends ServiceProvider
         ],
         MessageRead::class => [
             MarkMessageAsRead::class,
+        ],
+        NewMessage::class => [
+            NewMessageNotification::class,
         ],
     ];
 

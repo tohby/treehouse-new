@@ -175,9 +175,6 @@
                                 </div>
                             @endforeach
                         </div>
-                        <div class="image_mobile">
-                            <img src="./images/photo-1487309078313-fad80c3ec1e5@3x.png">
-                        </div>
                     </div>
                 </div>
                 <div class="content_right">
@@ -186,17 +183,10 @@
                             <span>Product Details</span>
                         </div>
                         <div class="detail_content">
-                            <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                                aliquyam erat, sed diam volu amet.
-
-                            </p>
-                            <button type="submit">Buy Now</button>
-
+                            <p>{{$portfolio->description}}</p>
+                            <a href="/product/{{$portfolio->id}}/order" class="button">
+                                Order Paint
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -333,15 +323,6 @@
         $("span, .overlay").click(function () {
             $(".show").fadeOut();
         });
-
-        // $(window).scroll(function () {
-        //     if ($(document).scrollTop() > 1) {
-        //         $('.menu_body').addClass("gt_sticky-header");
-        //         $('.menu_body').delay(10).fadeIn(400);
-        //     } else {
-        //         $('.menu_body').removeClass("gt_sticky-header");
-        //     }
-        // });
 
         $('.owl-carousel').owlCarousel({
             loop: true,
@@ -489,24 +470,6 @@
                     }
                 }
             }); /*http://idangero.us/swiper/api/*/
-
-
-
-        //window on dom ready
-            // window.addEvent('domready', function() {
-            //     //for every switch-view link
-            //     $$('.cd-slider-nav li').each(function(el) {
-            //         //add click event
-            //         el.addEvent('click', function(e) {
-            //             //nowhere
-            //             e.stop();
-            //             //morph baby!
-            //             myFx = new Fx.Morph('cd-hero-slider', {duration: 500, transition: Fx.Transitions.Sine.easeOut}).start('.' + el.get('rel'));
-            //         });
-            //     });
-            // });
-                
-            
         
             function checkVideo(hiddenSlide, container, n) {
                 //check if a video outside the viewport is playing - if yes, pause it

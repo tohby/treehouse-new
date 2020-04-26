@@ -6,6 +6,7 @@ use App\Notifications\MessageReceived;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Http\Request;
 use App\Contact;
+use App\Events\NewMessage;
 Use Alert;
 Use App\User;
 
@@ -24,9 +25,8 @@ class ContactMessageController extends Controller
             'message' => $request->input('message'),
         ]);
 
-        $users = User::get();
-
         // Notification::route('mail', $users)->notify(new MessageReceived($message));
+        event(new NewMessage($message));
         Alert::success('Message Sent', 'Thank you for getting in touch, we will get back to you shortly.')->showConfirmButton('Dismiss', '#ff6c00');
         return redirect('/contact');
     }

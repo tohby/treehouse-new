@@ -1,12 +1,14 @@
 @component('mail::message')
-# Introduction
+# You have a new message!
 
-The body of your message.
+Hello,
 
-@component('mail::button', ['url' => ''])
-Button Text
+You have new messages waiting in your inbox
+
+@component('mail::button', ['url' => $url])
+See all messages
 @endcomponent
 
 Thanks,<br>
-{{ config('app.name') }}
+Khanh Arts
 @endcomponent
