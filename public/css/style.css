@@ -1619,7 +1619,6 @@
 }
 
 .gf_section-12 .contact_background {
-  background-image: url(/images/istockphoto-510630336-612x612@3x.jpg?35770567261eaa4f0de6739454dea866);
   background-position: center;
   height: 667px;
   width: 100%;
@@ -1627,19 +1626,8 @@
   background-size: cover;
 }
 
-.gf_section-12 .overlay {
-  position: absolute;
-  background-image: url(/images/1istockphoto-510630336-612x612@3x.png?11ff713810f5702da5c6aa967c6a2e91);
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  z-index: 3;
-}
-
 .gf_section-12 .contact_content {
   position: absolute;
-  z-index: 4;
 }
 
 .gf_section-12 .contact_content .content_left {

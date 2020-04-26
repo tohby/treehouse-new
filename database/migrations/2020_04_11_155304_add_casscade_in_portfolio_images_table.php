@@ -27,7 +27,8 @@ class AddCasscadeInPortfolioImagesTable extends Migration
     public function down()
     {
         Schema::table('portfolio_images', function (Blueprint $table) {
-            //
+            $table->dropForeign(['portfolio_id']);
+            $table->foreign('portfolio_id')->references('id')->on('portfolios')->change();
         });
     }
 }

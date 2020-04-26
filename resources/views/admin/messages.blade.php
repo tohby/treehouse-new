@@ -5,7 +5,7 @@
                 <div class="col">
                     <h5 class="card-header-title font-weight-bold">Recent Messages</h5>
                 </div>
-                <div class="col-auto"><a href="#!" class="small font-weight-bold">View all</a></div>
+                <div class="col-auto"><a href="/messages" class="small font-weight-bold">View all</a></div>
             </div>
         </div>
         <div class="card-body border-top">

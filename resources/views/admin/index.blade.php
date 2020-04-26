@@ -80,7 +80,7 @@
                     <div class="row align-items-center">
                         <div class="col">
                             <h6 class="text-uppercase text-muted mb-2 h6">
-                                Messages
+                                Unread Messages
                             </h6>
                             <span class="h2 mb-0">
                                 {{count($messages)}}

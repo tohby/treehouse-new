@@ -1558,25 +1558,25 @@ Javascript disabled
 .gf_section-12 {
   padding: 97px 0 67px 0;
   .contact_background {
-      background-image: url(../../public/images/istockphoto-510630336-612x612@3x.jpg);
+    //   background-image: url(../../public/images/istockphoto-510630336-612x612@3x.jpg);
       background-position: center;
       height: 667px;
       width: 100%;
       position: relative;
       background-size: cover;
   }
-  .overlay {
-      position: absolute;
-      background-image: url(../../public/images/1istockphoto-510630336-612x612@3x.png);
-      background-position: center;
-      height: 100%;
-      width: 100%;
-      background-size: cover;
-      z-index: 3;
-  }
+//   .overlay {
+//       position: absolute;
+//       background-image: url(../../public/images/1istockphoto-510630336-612x612@3x.png);
+//       background-position: center;
+//       height: 100%;
+//       width: 100%;
+//       background-size: cover;
+//       z-index: 3;
+//   }
   .contact_content {
       position: absolute;
-      z-index: 4;
+    //   z-index: 4;
       .content_left {
           width: 50%;
           p {

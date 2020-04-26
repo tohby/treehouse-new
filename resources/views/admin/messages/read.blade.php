@@ -14,12 +14,12 @@
             <!-- Nav -->
             <ul class="nav nav-tabs nav-overflow header-tabs">
                 <li class="nav-item">
-                    <a href="/messages" class="nav-link active">
+                    <a href="/messages" class="nav-link">
                         All
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/messages/read" class="nav-link">
+                    <a href="/messages/read" class="nav-link active">
                         Read <span class="badge badge-pill badge-soft-secondary">{{$read->count()}}</span>
                     </a>
                 </li>

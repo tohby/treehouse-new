@@ -2,18 +2,15 @@
 @import 'variables';
 
 // import font
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
-$date-font: 'Playfair Display', serif;
 $greeting-font: 'PT Serif', serif;
 $hello-font: 'Baloo Paaji 2', cursive;
 $lora: 'Lora', serif;
 .dd{
-  font-family: $date-font;
   font-size: 40px;
 }
 

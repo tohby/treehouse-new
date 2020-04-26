@@ -99,7 +99,7 @@
                 <a href="/portfolio" class="{{ request()->is('portfolio') || request()->is('portfolio/*') ? 'active' : '' }}"></i>Portfolio</a>
                 <a href="/events" class="{{ request()->is('events') || request()->is('events/*') ? 'active' : '' }}"></i>Events</a>
                 <a href="/orders" class="{{ request()->is('orders') || request()->is('orders/*') ? 'active' : '' }}"></i>Orders</a>
-                <a href="/messages" class="{{ request()->is('messages') || request()->is('messages/*') ? 'active' : '' }}"></i>Messages</a>
+                <a href="/messages" class="{{ request()->is('message/*') || request()->is('messages') || request()->is('messages/*') ? 'active' : '' }}"></i>Messages</a>
                 @can ('manage-users')
                     <a href="/users" class="{{ request()->is('users') || request()->is('users/*') ? 'active' : '' }}">Users</a>
                 @endcan

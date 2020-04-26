@@ -20,7 +20,7 @@ class CreateOrdersTable extends Migration
             $table->foreign('portfolio_id')->references('id')->on('portfolios');
             $table->integer('number_of_products');
             $table->string('name');
-            $table->text('note');
+            $table->text('note')->nullable();
             $table->string('address');
             $table->string('email')->nullable();
             $table->string('phone')->nullable();

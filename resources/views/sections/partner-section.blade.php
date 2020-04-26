@@ -7,21 +7,19 @@
                 </div>
                 <div class="owl-carousel gt_slide_partner">
                     <div class="item gt_product-carousel--item">
-                        <img src="./images/Mask Group 1@3x.png">
+                        <img src="images/partners/netflix.png">
                     </div>
 
                     <div class="item gt_product-carousel--item">
-                        <img src="./images/Mask Group 1@3x.png">
+                        <img src="images/partners/OPQTV.png">
                     </div>
                     <div class="item gt_product-carousel--item">
-                        <img src="./images/Mask Group 1@3x.png">
+                        <img src="images/partners/vtv.png">
                     </div>
                     <div class="item gt_product-carousel--item">
-                        <img src="./images/Mask Group 1@3x.png">
+                        <img src="images/partners/bbc.png">
                     </div>
-                    <div class="item gt_product-carousel--item">
-                        <img src="./images/Mask Group 1@3x.png">
-                    </div>
+
                 </div>
             </div>
         </div>

@@ -14,7 +14,7 @@
             <!-- Nav -->
             <ul class="nav nav-tabs nav-overflow header-tabs">
                 <li class="nav-item">
-                    <a href="/messages" class="nav-link active">
+                    <a href="/messages" class="nav-link">
                         All
                     </a>
                 </li>
@@ -24,7 +24,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/messages/unread" class="nav-link">
+                    <a href="/messages/unread" class="nav-link active">
                         Unread <span class="badge badge-pill badge-soft-secondary">{{$unread->count()}}</span>
                     </a>
                 </li>
