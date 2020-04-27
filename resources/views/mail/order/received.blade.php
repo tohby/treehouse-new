@@ -1,10 +1,12 @@
 @component('mail::message')
-# Introduction
+# A new order just came in!
 
-The body of your message.
+Hi there,
 
-@component('mail::button', ['url' => ''])
-Button Text
+A customer ust placed and order. Please review it and contact the customer quickly. Follow the link below to see all new orders.
+
+@component('mail::button', ['url' => $url])
+See all orders
 @endcomponent
 
 Thanks,<br>

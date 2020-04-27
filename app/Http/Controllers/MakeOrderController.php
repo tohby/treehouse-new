@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Notifications\OrderSent;
 use App\Notifications\OrderReceived;
+use App\Events\OrderPlaced;
 use App\Order;
 Use Alert;
 
@@ -40,6 +41,9 @@ class MakeOrderController extends Controller
             'email' => $request->input('email'),
             'phone' => $request->input('phone'),
         ]);
+        
+        event(new OrderPlaced($order));
+
         Alert::success('Order sent', 'Thank you for showing interest in our product, we will reach out to you soon.')->showConfirmButton('Dismiss', '#ff6c00');
         return back();
     }

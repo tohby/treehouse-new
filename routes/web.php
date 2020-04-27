@@ -38,12 +38,3 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('messages/unread', 'MessagesController@unread');
     Route::get('message/{id}', 'MessagesController@show');
 });
-
-Route::get('ordernum', function(){
-    // $order = new Order;
-
-    // $order->user_id = Auth()->id();
-    
-    // $order->save();
-    return $orderNumber;
-});

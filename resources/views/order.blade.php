@@ -190,7 +190,7 @@
                             </div>
                             <div class="contact_form_group">
                                 <p class="contact_label" style="padding-top: 0">Quantity</p>
-                                <input type="number" name="quantity" value="1" min="1" placeholder="Number of products you want">
+                                <input type="number" name="quantity" value="1" min="1" placeholder="Number of products you want" required>
                             </div>
                             <div class="contact_form_group">
                                 <p class="contact_label">Note</p>
