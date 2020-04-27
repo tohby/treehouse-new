@@ -28,6 +28,8 @@
                                     <span class="badge badge-primary">Order Placed</span>
                                 @elseif($order->order_status == 2)
                                     <span class="badge badge-info">Processed</span>
+                                @elseif($order->order_status == 0)
+                                    <span class="badge badge-danger">Cancelled</span>
                                 @endif
                             </td>
                         @endforeach
