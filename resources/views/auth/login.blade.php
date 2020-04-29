@@ -11,6 +11,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="{{ asset('css/auth.css') }}" rel="stylesheet">
+    <link rel="icon" href="{{asset('images/icon.png')}}">
 </head>
 
 <body>

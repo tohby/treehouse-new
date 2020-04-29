@@ -40,7 +40,7 @@ class OrderReceived extends Notification
      */
     public function toMail($notifiable)
     {
-        $url = url('/messages/');
+        $url = url('/orders/');
         return (new MailMessage)->markdown('mail.order.received', ['url' => $url]);
     }
 

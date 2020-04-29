@@ -21,7 +21,7 @@
                                 {{$message->name}}
                             </h5>
                             <p class="small text-gray-700 mb-0">
-                                {{ Str::words($message->message, 15, ' ...') }}.
+                                {{ Str::words($message->message, 10, ' ...') }}.
                             </p>
                             <!-- Time -->
                             <small class="text-muted">

@@ -6,7 +6,11 @@ use Illuminate\Auth\Events\Registered;
 use App\Events\MessageRead;
 use App\Events\NewMessage;
 use App\Events\OrderPlaced;
+use App\Events\OrderCancelled;
+use App\Events\OrderStatusChanged;
 use App\Listeners\MarkMessageAsRead;
+use App\Listeners\CancelOrder;
+use App\Listeners\ChangeOrderStatus;
 use App\Listeners\NewMessageNotification;
 use App\Listeners\SendNewOrderNotification;
 use App\Listeners\SendOrderPlacedNotification;
@@ -34,6 +38,12 @@ class EventServiceProvider extends ServiceProvider
         OrderPlaced::class => [
             SendNewOrderNotification::class,
             SendOrderPlacedNotification::class,
+        ],
+        OrderCancelled::class => [
+            CancelOrder::class,
+        ],
+        OrderStatusChanged::class => [
+            ChangeOrderStatus::class,
         ],
     ];
 

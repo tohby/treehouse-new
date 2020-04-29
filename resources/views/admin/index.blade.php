@@ -14,10 +14,10 @@
                     <div class="row align-items-center">
                         <div class="col">
                             <h6 class="text-uppercase text-muted mb-2 h6">
-                                Orders
+                                New Orders
                             </h6>
                             <span class="h2 mb-0">
-                                24,500
+                                {{count($orders)}}
                             </span>
                         </div>
                         <div class="col-auto">

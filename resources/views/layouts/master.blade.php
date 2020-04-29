@@ -8,9 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    @yield('head')
-
-    <title>Khanh | Treehouse</title>
+    <title>Khanh Arts</title>
 
     <!-- Fonts -->
     <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
@@ -21,7 +19,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/tree4564.css')}}">
-    <link rel="icon" href="{{asset('images/logo.png')}}">
+    <link rel="icon" href="{{asset('images/icon.png')}}">
 </head>
 
 <body class="{{ request()->is('messages') || request()->is('messages/*') ? 'no-overflow' : '' }}">
@@ -56,7 +54,6 @@
                         <li class="nav-item dropdown">
                             <div class="d-md-none">
                                 <a class="nav-link" href="/dashboard">Dashboard</a>
-                                {{--  <a class="nav-link" href="/carousel">Carousel</a>  --}}
                                 <a class="nav-link" href="/portfolio">Portfolio</a>
                                 <a class="nav-link" href="/events">Events</a>
                                 <a class="nav-link" href="/orders">Orders</a>
@@ -94,14 +91,20 @@
                 <h1 class="h3 logo">Khanh</h1>
             </a>
             <div id="menu" class="px-3 my-4">
-                <a href="/dashboard" class="{{ request()->is('dashboard') || request()->is('dashboard/*') ? 'active' : '' }}"> Dashboard</a>
-                {{--  <a href="/carousel" class="{{ request()->is('carousel') || request()->is('carousel/*')  ? 'active' : '' }}"></i>Carousel</a>  --}}
-                <a href="/portfolio" class="{{ request()->is('portfolio') || request()->is('portfolio/*') ? 'active' : '' }}"></i>Portfolio</a>
-                <a href="/events" class="{{ request()->is('events') || request()->is('events/*') ? 'active' : '' }}"></i>Events</a>
-                <a href="/orders" class="{{ request()->is('orders') || request()->is('orders/*') ? 'active' : '' }}"></i>Orders</a>
-                <a href="/messages" class="{{ request()->is('message/*') || request()->is('messages') || request()->is('messages/*') ? 'active' : '' }}"></i>Messages</a>
+                <a href="/dashboard"
+                    class="{{ request()->is('dashboard') || request()->is('dashboard/*') ? 'active' : '' }}">
+                    Dashboard</a>
+                <a href="/portfolio"
+                    class="{{ request()->is('portfolio') || request()->is('portfolio/*') ? 'active' : '' }}"></i>Portfolio</a>
+                <a href="/events"
+                    class="{{ request()->is('events') || request()->is('events/*') ? 'active' : '' }}"></i>Events</a>
+                <a href="/orders"
+                    class="{{ request()->is('orders') || request()->is('orders/*') ? 'active' : '' }}"></i>Orders</a>
+                <a href="/messages"
+                    class="{{ request()->is('message/*') || request()->is('messages') || request()->is('messages/*') ? 'active' : '' }}"></i>Messages</a>
                 @can ('manage-users')
-                    <a href="/users" class="{{ request()->is('users') || request()->is('users/*') ? 'active' : '' }}">Users</a>
+                <a href="/users"
+                    class="{{ request()->is('users') || request()->is('users/*') ? 'active' : '' }}">Users</a>
                 @endcan
             </div>
         </div>
@@ -112,7 +115,7 @@
             @yield('content')
         </main>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
@@ -120,7 +123,7 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
     <script src="{{ asset('js/bs-custom-file-input.js') }}"></script>
-   
+
     <script src="{{ asset('js/app.js') }}"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
