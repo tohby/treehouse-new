@@ -258,7 +258,7 @@
   left: 3em;
 }
 
-.gf_section-2 .icon_mess svg {
+/* .gf_section-2 .icon_mess svg {
   width: 40px;
   height: 40px;
   color: #339af0;
@@ -278,7 +278,7 @@
   width: 69px;
   height: 36px;
   color: #ffffff;
-}
+} */
 
 .gf_section-2 .scroll_icon_wrap .scroll_link {
   display: block;

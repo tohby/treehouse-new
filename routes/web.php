@@ -15,6 +15,10 @@ Auth::routes(['register' => false]);
 
 Route::get('/', 'HomeController@index');
 Route::get('/about', 'HomeController@about');
+Route::get('/about1', 'HomeController@about');
+Route::get('/about2', 'HomeController@about');
+Route::get('/about3', 'HomeController@about');
+Route::get('/about4', 'HomeController@about');
 Route::get('/contact', 'HomeController@contact');
 Route::post('/contact/send', 'ContactMessageController@send');
 Route::get('/store', 'HomeController@portfolio');

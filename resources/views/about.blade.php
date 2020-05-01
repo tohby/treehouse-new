@@ -182,42 +182,45 @@
                     <div class="image_about_me">
                         <div class="owl-carousel gt_slide_partner">
                             <div class="item gt_product-carousel--item">
-                                <img src="./images/photo-1487309078313-fad80c3ec1e5@3x.png">
+                                <img src="./images/aboutmepage/WANG2194.jpg">
                             </div>
                             <div class="item gt_product-carousel--item">
-                                <img src="./images/photo-1487309078313-fad80c3ec1e5@3x.png">
+                                <img src="./images/aboutmepage/WANG2252.jpg">
                             </div>
                             <div class="item gt_product-carousel--item">
-                                <img src="./images/photo-1487309078313-fad80c3ec1e5@3x.png">
+                            <img src="./images/aboutmepage/WANG2322.jpg">
                             </div>
                             <div class="item gt_product-carousel--item">
-                                <img src="./images/photo-1487309078313-fad80c3ec1e5@3x.png">
+                            <img src="./images/aboutmepage/WANG2331.jpg">
                             </div>
-                            <div class="item gt_product-carousel--item">
-                                <img src="./images/photo-1487309078313-fad80c3ec1e5@3x.png">
-                            </div>
+                            
                         </div>
                         <div class="image_mobile">
-                            <img src="./images/photo-1487309078313-fad80c3ec1e5@3x.png">
+                        <img src="./images/aboutmepage/WANG2252.jpg">
                         </div>
                     </div>
                 </div>
                 <div class="content_right">
                     <div class="content_text">
                         <div class="title_content">
-                            <span>Product Details</span>
+                            <span>As Performance Artist
+</span>
                         </div>
                         <div class="detail_content">
                             <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                                aliquyam erat, sed diam volu amet.
+                            I’m one of the first performance artists in Vietnam. Although it’s called “performance art”, this is the space where the audience gets to see a 100%, authentic, real me. I use my body, vocals, face and actions to convey my emotions. Mind, body and soul. My performances are extremely grounded in reality. I voice my opinions about the Government, Politics, Humanity- it’s as real as it gets. I don’t place any barriers when it comes to my performances, I don’t care about the law or about pleasing people, it comes from a very raw
+space. I feel like performance art makes me real, it shows you that I too am a human being, struggling to find my voice in a crazy world. People cry with me, laugh with me, think with me- we’re in the performance together.
+
+When I plan my performances, I always take issues that are close to my heart and then convey it in a universal way. Performance art is universal, it helps me build connections with artists around the world, without any language. I can use my body to express everything I need.
+
+I’m also a choreographer of contemporary dance and have performed in several countries. Music and dance are a direct outlet for my soul, their impact is face-to-face, unlike paintings and sculptures. I hope to get into writing and poetry in the future.
+
+Memorable events:
+I did a 12-hour-long performance in Hanoi city centre, where I walked up to just 1cm with each step. It was from 6AM to 6PM and I performed non-stop. I was invited by the Government to perform at an official gathering of ministers, diplomats, ambassadors from different countries. I showed up on the stage butt-naked and addressed the audience in the voice of freedom.
+
 
                             </p>
-                            <button type="submit">Buy Now</button>
+                           
 
                         </div>
                     </div>
