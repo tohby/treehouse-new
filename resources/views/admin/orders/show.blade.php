@@ -3,10 +3,10 @@
 @section('content')
 <div class="container-fluid px-3">
     <div class="row">
-        <div class="col-sm-9">
+        <div class="col-sm-8 col-md-7 col-lg-9">
             <h2>Order Details</h2>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-4 col-md-5 col-lg-3">
             @if ($order->order_status != 0 && $order->order_status != 3)
                 <a href="/orders/{{$order->id}}/change-status" class="btn btn-info">
                 @if ($order->order_status == 1)

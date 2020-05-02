@@ -55,7 +55,7 @@
                             <div class="d-md-none">
                                 <a class="nav-link" href="/dashboard">Dashboard</a>
                                 <a class="nav-link" href="/portfolio">Portfolio</a>
-                                <a class="nav-link" href="/events">Events</a>
+                                <a class="nav-link" href="/our-events">Events</a>
                                 <a class="nav-link" href="/orders">Orders</a>
                                 <a class="nav-link" href="/messages">Messages</a>
                                 <a class="nav-link" href="/users">Users</a>
@@ -96,8 +96,8 @@
                     Dashboard</a>
                 <a href="/portfolio"
                     class="{{ request()->is('portfolio') || request()->is('portfolio/*') ? 'active' : '' }}"></i>Portfolio</a>
-                <a href="/events"
-                    class="{{ request()->is('events') || request()->is('events/*') ? 'active' : '' }}"></i>Events</a>
+                <a href="/our-events"
+                    class="{{ request()->is('our-events') || request()->is('our-events/*') ? 'active' : '' }}"></i>Events</a>
                 <a href="/orders"
                     class="{{ request()->is('orders') || request()->is('orders/*') ? 'active' : '' }}"></i>Orders</a>
                 <a href="/messages"

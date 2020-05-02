@@ -12,7 +12,7 @@
     </div>
 
     <div class="bg-white rounded-lg p-3 table-responsive">
-        <table class="table">
+        <table class="table table-borderless">
             <tbody>
                 @foreach ($users as $user)
                 <tr>

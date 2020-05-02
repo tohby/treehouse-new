@@ -37152,11 +37152,11 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! E:\xampp\htdocs\treehouse\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! E:\xampp\htdocs\treehouse\resources\sass\app.scss */"./resources/sass/app.scss");
-__webpack_require__(/*! E:\xampp\htdocs\treehouse\resources\sass\style.scss */"./resources/sass/style.scss");
-__webpack_require__(/*! E:\xampp\htdocs\treehouse\resources\sass\global.scss */"./resources/sass/global.scss");
-module.exports = __webpack_require__(/*! E:\xampp\htdocs\treehouse\resources\sass\tree4564.scss */"./resources/sass/tree4564.scss");
+__webpack_require__(/*! C:\xampp\htdocs\treehouse-new\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\xampp\htdocs\treehouse-new\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\treehouse-new\resources\sass\style.scss */"./resources/sass/style.scss");
+__webpack_require__(/*! C:\xampp\htdocs\treehouse-new\resources\sass\global.scss */"./resources/sass/global.scss");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\treehouse-new\resources\sass\tree4564.scss */"./resources/sass/tree4564.scss");
 
 
 /***/ })

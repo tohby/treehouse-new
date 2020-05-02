@@ -25,8 +25,8 @@ class HomeController extends Controller
     }
 
     public function events(){
-        $events = Event::orderBy('created_at', 'desc')->simplePaginate(12);
-        return $events;
+        $events = Event::orderBy('created_at', 'desc')->paginate(10);
+        return view('events', compact('events'));
     }
 
     public function about(){

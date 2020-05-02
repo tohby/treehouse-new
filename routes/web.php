@@ -22,7 +22,7 @@ Route::get('/about4', 'HomeController@about');
 Route::get('/contact', 'HomeController@contact');
 Route::post('/contact/send', 'ContactMessageController@send');
 Route::get('/store', 'HomeController@portfolio');
-Route::get('/our-events', 'HomeController@events');
+Route::get('/events', 'HomeController@events');
 Route::get('/product/{id}', 'HomeController@portfolio_show');
 Route::get('/product/{id}/order', 'HomeController@order');
 Route::post('/product/order', 'MakeOrderController@order');
@@ -32,7 +32,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::resource('/users', 'UsersController')->except(['show']);
 
     Route::resource('portfolio', 'PortfolioController');
-    Route::resource('events', 'EventController');
+    Route::resource('our-events', 'EventController');
     Route::get('orders', 'OrderController@index');
     Route::get('orders/{id}/details', 'OrderController@show');
     Route::get('orders/{id}/cancel', 'OrderController@cancel');
