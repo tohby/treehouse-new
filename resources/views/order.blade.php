@@ -110,10 +110,10 @@
             <div class="">
                 <div class="gf_flex menu_content">
                     <div class="logo">
-                        <h1 class="logo_text">
-                            <p class="text_large">Kanh</p>
-                            <p class="text_small"> Hanoi, Vietnam</p>
-                        </h1>
+                        <a href="/" class="logo_text">
+                            <p class="text_large">Khan</p>
+                            <p class="text_small"> Tree House, Hanoi </p>
+                        </a>
                     </div>
                     <div class="gf_flex nav_menu">
                         <ul class="gf_flex menu_left">
