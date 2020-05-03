@@ -21,11 +21,25 @@
                         <h5><span class="badge badge-primary">{{$user->user_role}}</span></h5>
                     </td>
                     <td>{{$user->email}}</td>
-                    <td class="d-flex justify-content-end">
-                        <a href="#" type="button" class="btn btn-link text-dark text-muted"><i
-                                class="far fa-trash-alt"></i></a>
-                    </td>
+                    @unless ($user->id == Auth::user()->id )
+                        <td class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-link text-dark text-muted" data-toggle="modal"
+                                data-target=".DeleteModal{{$user->id}}"><i class="fas fa-trash-alt"></i>&nbsp;
+                                Delete</button>
+                        </td>
+                    @endunless
+                    
                 </tr>
+
+                {{-- Delete Modal --}}
+                <div class="modal fade bd-delete-modal-lg DeleteModal{{$user->id}}" tabindex="-1" role="dialog"
+                    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="dialog">
+                        <div class="modal-content p-5 mt-2">
+                            @include('admin/users/delete')
+                        </div>
+                    </div>
+                </div>
                 @endforeach
             </tbody>
         </table>

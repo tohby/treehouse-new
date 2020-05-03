@@ -29,7 +29,7 @@ Route::post('/product/order', 'MakeOrderController@order');
 
 Route::group(['middleware' => 'auth'], function() {
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
-    Route::resource('/users', 'UsersController')->except(['show']);
+    Route::resource('/users', 'UsersController')->except(['show', 'edit', 'update']);
 
     Route::resource('portfolio', 'PortfolioController');
     Route::resource('events', 'EventController');
