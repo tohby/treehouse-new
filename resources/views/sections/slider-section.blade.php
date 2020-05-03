@@ -38,7 +38,7 @@
                             <div class="content_text">
                                 <h2>Mr Kanh</h2>
                                 <p>Khanh’s<br> Painting Stand </p>
-                                <a href="#" class="link_project cd-btn">
+                                <a href="/about/the-painter" class="link_project cd-btn">
                                 <span>Read More</span>
                                     <span>
                                         <svg aria-hidden="true" focusable="false" data-prefix="fal"
@@ -65,7 +65,7 @@
                             <div class="content_text">
                                 <h2>Mr Kanh</h2>
                                 <p>khanh<br> The Architect </p>
-                                <a href="#" class="link_project cd-btn">
+                                <a href="/about/the-architect" class="link_project cd-btn">
                                 <span>Read More</span>
                                     <span>
                                         <svg aria-hidden="true" focusable="false" data-prefix="fal"

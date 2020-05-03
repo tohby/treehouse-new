@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
 
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/global.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/global.css')}}">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -182,21 +182,21 @@
                     <div class="image_about_me">
                         <div class="owl-carousel gt_slide_partner">
                             <div class="item gt_product-carousel--item">
-                                <img src="./images/aboutmepage/WANG2194.jpg">
+                                <img src="{{asset('images/aboutmepage/WANG2194.jpg')}}">
                             </div>
                             <div class="item gt_product-carousel--item">
-                                <img src="./images/aboutmepage/WANG2252.jpg">
+                                <img src="{{asset('images/aboutmepage/WANG2252.jpg')}}">
                             </div>
                             <div class="item gt_product-carousel--item">
-                            <img src="./images/aboutmepage/WANG2322.jpg">
+                                <img src="{{asset('images/aboutmepage/WANG2322.jpg')}}">
                             </div>
                             <div class="item gt_product-carousel--item">
-                            <img src="./images/aboutmepage/WANG2331.jpg">
+                                <img src="{{asset('images/aboutmepage/WANG2331.jpg')}}">
                             </div>
-                            
+
                         </div>
                         <div class="image_mobile">
-                        <img src="./images/aboutmepage/WANG2252.jpg">
+                            <img src="./images/aboutmepage/WANG2252.jpg">
                         </div>
                     </div>
                 </div>
@@ -204,33 +204,74 @@
                     <div class="content_text">
                         <div class="title_content">
                             <span>As the painter
-</span>
+                            </span>
                         </div>
                         <div class="detail_content">
                             <p>
-                            Painting has been my first love and my favourite form of self-expression since age 5. I’d like
-to think of it as my superpower. No matter what happens in life- happy or sad- I find comfort in my paints, brushes and canvas. I’m not sure I would have made it alive through the Police phase of my life, if not for painting.
+                                Painting has been my first love and my favourite form of self-expression since age 5.
+                                I’d like
+                                to think of it as my superpower. No matter what happens in life- happy or sad- I find
+                                comfort in my paints, brushes and canvas. I’m not sure I would have made it alive
+                                through the Police phase of my life, if not for painting.
 
-When I first started painting, my paintings were based on realism. I would observe nature and replicate it. But after my time with the Censor Police, my paintings shifted from realism to surrealism. As a Censor Police, I found myself locked in a box and my mind naturally conjured up dreams and surreal visuals of a world I wish to escape to. Since then, my paintings only express what I love and not what I don’t love about this world. My paintings are otherworldly. I might be in a devastating place in life, but when I paint, I paint happy thoughts. These are the thoughts that give me the energy to survive. That’s the feeling I’d like my buyers to feel when they pick up my artwork. My message is- Keep dreaming. It’s not that I don’t see the negative energies in life- loss, heartbreak, cheating, death, sadness, flakiness. I see it, but that’s not what I choose to paint. I choose love over hate. In terms of themes, there are 4 main themes in all my paintings- nature, music, love and
-sex. 
+                                When I first started painting, my paintings were based on realism. I would observe
+                                nature and replicate it. But after my time with the Censor Police, my paintings shifted
+                                from realism to surrealism. As a Censor Police, I found myself locked in a box and my
+                                mind naturally conjured up dreams and surreal visuals of a world I wish to escape to.
+                                Since then, my paintings only express what I love and not what I don’t love about this
+                                world. My paintings are otherworldly. I might be in a devastating place in life, but
+                                when I paint, I paint happy thoughts. These are the thoughts that give me the energy to
+                                survive. That’s the feeling I’d like my buyers to feel when they pick up my artwork. My
+                                message is- Keep dreaming. It’s not that I don’t see the negative energies in life-
+                                loss, heartbreak, cheating, death, sadness, flakiness. I see it, but that’s not what I
+                                choose to paint. I choose love over hate. In terms of themes, there are 4 main themes in
+                                all my paintings- nature, music, love and
+                                sex.
 
-When it comes to nature, I swing between extremes. Either I paint extreme close-ups of a leaf or flower or I go extremely wide with large mountains and landscapes. It’s never in- between. The nature is very much a breathing character in my paintings. The mountain could be the human body, the tree could be performing a dance. Nature is human and humans are nature.
+                                When it comes to nature, I swing between extremes. Either I paint extreme close-ups of a
+                                leaf or flower or I go extremely wide with large mountains and landscapes. It’s never
+                                in- between. The nature is very much a breathing character in my paintings. The mountain
+                                could be the human body, the tree could be performing a dance. Nature is human and
+                                humans are nature.
 
-Then, there’s sex. From the time I was a kid, I’ve always had a very strong drive for sex and love. When I quit the Police at age 34, the doors of the world opened to me and I could freely express my sexual desires. My love of love and sex is very fresh. It’s not about porn or lust. It’s the most beautiful feeling of being alive and interacting with others. In Vietnam, sex is hidden, but the reality is, the Universe exists because of sex. Not just humans, but flowers, animals, birds, trees. It’s the same with music. Music drives the world. When I listen to music, I don’t just listen to the beats or the lyrics, I visualise my paintings. If music had visuals, they would look like my paintings.
+                                Then, there’s sex. From the time I was a kid, I’ve always had a very strong drive for
+                                sex and love. When I quit the Police at age 34, the doors of the world opened to me and
+                                I could freely express my sexual desires. My love of love and sex is very fresh. It’s
+                                not about porn or lust. It’s the most beautiful feeling of being alive and interacting
+                                with others. In Vietnam, sex is hidden, but the reality is, the Universe exists because
+                                of sex. Not just humans, but flowers, animals, birds, trees. It’s the same with music.
+                                Music drives the world. When I listen to music, I don’t just listen to the beats or the
+                                lyrics, I visualise my paintings. If music had visuals, they would look like my
+                                paintings.
 
-These 4 elements are very inter-connected. We’re all in harmony with the Universe. So, I mainly work on Abstract paintings, Impressionist paintings. Sometimes, I paint on the lines of realism, but that’s because I get bored as an artist and I need to keep changing and trying new things. In terms of materials, I used to create my paintings with oil, acrylic paint, water colour, lacquer. But now, I try to use new techniques to create my work. I have used stone and metal. Materials are an important tool in your painting, but it can’t be more important than your concept. Your concept comes first and then you pick a material that will help you
-convey your message in the best possible way.
+                                These 4 elements are very inter-connected. We’re all in harmony with the Universe. So, I
+                                mainly work on Abstract paintings, Impressionist paintings. Sometimes, I paint on the
+                                lines of realism, but that’s because I get bored as an artist and I need to keep
+                                changing and trying new things. In terms of materials, I used to create my paintings
+                                with oil, acrylic paint, water colour, lacquer. But now, I try to use new techniques to
+                                create my work. I have used stone and metal. Materials are an important tool in your
+                                painting, but it can’t be more important than your concept. Your concept comes first and
+                                then you pick a material that will help you
+                                convey your message in the best possible way.
 
-I don’t know about my future as a painter, but I do know that even after 60 years of existence, it still feels like I’m only beginning my journey as a painter. The feeling is fresh. I remember this incident when I was in New York at a friends’ apartment and she had a cat. It was late at night and I was asleep. All of a sudden, I felt out of breath. I was gasping for air and was pretty certain it was the cat fur. It was too late to get to the hospital and I didn’t know what to do, so I got out of bed, brought my paints out and started painting. I was so submerged in my painting; I forgot my life was in danger. I went to the hospital the next day and the doctor thought I was very lucky to have made it. So, I can say for sure, painting has
-saved my life. Not just superficially, but for real.
+                                I don’t know about my future as a painter, but I do know that even after 60 years of
+                                existence, it still feels like I’m only beginning my journey as a painter. The feeling
+                                is fresh. I remember this incident when I was in New York at a friends’ apartment and
+                                she had a cat. It was late at night and I was asleep. All of a sudden, I felt out of
+                                breath. I was gasping for air and was pretty certain it was the cat fur. It was too late
+                                to get to the hospital and I didn’t know what to do, so I got out of bed, brought my
+                                paints out and started painting. I was so submerged in my painting; I forgot my life was
+                                in danger. I went to the hospital the next day and the doctor thought I was very lucky
+                                to have made it. So, I can say for sure, painting has
+                                saved my life. Not just superficially, but for real.
 
-Memorable event: 
-Exhibition in Fine Arts Museum of Vietnam. The theme was love and sex.
+                                Memorable event:
+                                Exhibition in Fine Arts Museum of Vietnam. The theme was love and sex.
 
 
 
                             </p>
-                           
+
 
                         </div>
                     </div>
@@ -240,201 +281,9 @@ Exhibition in Fine Arts Museum of Vietnam. The theme was love and sex.
         </div>
     </section>
 
-    <section class="gf_section-3 list_product_mobile" data-name="Portfolio">
-        <div class="gf_container">
-            <div class="portfolio_body">
-                <div class="gf_flex title_portfolio" style="justify-content: center">
-                    <h2>Similar Products</h2>
-                </div>
-                <div class="portfolio_content">
-                    <div class="gf_flex box_item">
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item1"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
+@include('sections/portfolio-section')
 
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item1"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item1"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item2"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item3"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item1"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item2"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item3"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <section class="gf_section-13 event_mobile" data-name="Events">
-        <div class="gf_container">
-            <div class="portfolio_body">
-                <div class="gf_flex title_portfolio" style="justify-content: center">
-                    <h2>Events</h2>
-                </div>
-                <div class="popup">
-                    <div class="portfolio_content">
-                        <div class="gf_flex box_item">
-                            <div class="item_content">
-                                <div class="item ">
-                                    <div class="bacground_image item1">
-                                        <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
-                                    </div>
-                                </div>
-                                <div class="info_product">
-                                    <h3>Untitled Abstract IV</h3>
-                                    <p>Nguyen Lam</p>
-
-                                </div>
-                            </div>
-                            <div class="item_content">
-                                <div class="item ">
-                                    <div class="bacground_image item1">
-                                        <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
-                                    </div>
-                                </div>
-                                <div class="info_product">
-                                    <h3>Untitled Abstract IV</h3>
-                                    <p>Nguyen Lam</p>
-
-                                </div>
-                            </div>
-                            <div class="item_content">
-                                <div class="item ">
-                                    <div class="bacground_image item1">
-                                        <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
-                                    </div>
-                                </div>
-                                <div class="info_product">
-                                    <h3>Untitled Abstract IV</h3>
-                                    <p>Nguyen Lam</p>
-
-                                </div>
-                            </div>
-                            <div class="item_content">
-                                <div class="item ">
-                                    <div class="bacground_image item1">
-                                        <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
-                                    </div>
-                                </div>
-                                <div class="info_product">
-                                    <h3>Untitled Abstract IV</h3>
-                                    <p>Nguyen Lam</p>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="show">
-                    <div class="overlay"></div>
-                    <div class="img-show">
-                        <span>X</span>
-                        <img src="">
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
+@include('sections/event-section')
 
 
     <section class="gf_section-10" data-name="Footer">

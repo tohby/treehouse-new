@@ -42,21 +42,21 @@
                     </div>
                     <div class="gf_flex nav_menu">
                         <ul class="gf_flex menu_left">
-                            <li class="active">
+                            <li class="{{ request()->is('product/*') || request()->is('store') || request()->is('store/*') ? 'active' : '' }}">
                                 <a href="/store">Store</a>
                             </li>
                             {{-- <li>
                                 <a href="#">News</a>
                             </li> --}}
-                            <li>
-                                <a href="/events">Events</a>
+                            <li class="{{ request()->is('our-events') || request()->is('our-events/*') ? 'active' : '' }}">
+                                <a href="/our-events">Events</a>
                             </li>
                         </ul>
                         <ul class="gf_flex menu_right">
-                            <li>
+                            <li class="{{ request()->is('about') || request()->is('about/*') ? 'active' : '' }}">
                                 <a href="/about">About Me</a>
                             </li>
-                            <li>
+                            <li class="{{ request()->is('contact') || request()->is('contact/*') ? 'active' : '' }}">
                                 <a href="/contact">Contact</a>
                             </li>
                         </ul>

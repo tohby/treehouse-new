@@ -42,10 +42,10 @@
                             <button type="button" class="dropdown-item" data-toggle="modal"
                                 data-target=".event-{{$event->id}}"><i class="far fa-eye"></i>&nbsp; View</button>
                             <button type="button" class="dropdown-item" data-toggle="modal"
-                                data-target=".event-{{$event->id}}"><i class="fas fa-pencil-alt"></i>&nbsp;
+                                data-target=".Edit-{{$event->id}}-Modal"><i class="fas fa-pencil-alt"></i>&nbsp;
                                 Edit</button>
                             <button type="button" class="dropdown-item" data-toggle="modal"
-                                data-target=".event-{{$event->id}}"><i class="fas fa-trash-alt"></i>&nbsp;
+                                data-target=".DeleteModal{{$event->id}}"><i class="fas fa-trash-alt"></i>&nbsp;
                                 Delete</button>
                         </div>
 
@@ -53,6 +53,8 @@
                 </div>
             </div>
         </div>
+
+        {{-- View Modal --}}
 
         <div class="modal fade show-event-modal-xl event-{{$event->id}} rounded-lg" tabindex="-1" role="dialog"
             aria-labelledby="newEventModalLabel" aria-hidden="true">
@@ -70,10 +72,32 @@
                 </div>
             </div>
         </div>
+
+        {{-- Delete Modal --}}
+        <div class="modal fade bd-delete-modal-lg DeleteModal{{$event->id}}" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="dialog">
+                <div class="modal-content p-5 mt-2">
+                    @include('admin/events/delete')
+                </div>
+            </div>
+        </div>
+
+        {{-- Edit Modal --}}
+        <div class="modal fade bd-delete-modal-lg Edit-{{$event->id}}-Modal" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="dialog">
+                <div class="modal-content p-5 mt-2">
+                    @include('admin/events/edit')
+                </div>
+            </div>
+        </div>
         @endforeach
+    </div>
+
+    <div class="float-right mt-5">
+        {{$events->links()}}
     </div>
 </div>
 @include('admin/events/create')
-@include('admin/events/edit')
-@include('admin/events/delete')
 @endsection

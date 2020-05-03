@@ -30,8 +30,34 @@ class HomeController extends Controller
     }
 
     public function about(){
-        return view('about');
+        $events = Event::orderBy('created_at', 'desc')->take(4)->get();
+        $portfolios = Portfolio::orderBy('created_at', 'desc')->take(4)->get();
+        return view('about', compact('events', 'portfolios'));
 
+    }
+
+    public function architect(){
+        $events = Event::orderBy('created_at', 'desc')->take(4)->get();
+        $portfolios = Portfolio::orderBy('created_at', 'desc')->take(4)->get();
+        return view('about1', compact('events', 'portfolios'));
+    }
+
+    public function artist(){
+        $events = Event::orderBy('created_at', 'desc')->take(4)->get();
+        $portfolios = Portfolio::orderBy('created_at', 'desc')->take(4)->get();
+        return view('about2', compact('events', 'portfolios'));
+    }
+
+    public function painter(){
+        $events = Event::orderBy('created_at', 'desc')->take(4)->get();
+        $portfolios = Portfolio::orderBy('created_at', 'desc')->take(4)->get();
+        return view('about4', compact('events', 'portfolios'));
+    }
+
+    public function sculptor(){
+        $events = Event::orderBy('created_at', 'desc')->take(4)->get();
+        $portfolios = Portfolio::orderBy('created_at', 'desc')->take(4)->get();
+        return view('about3', compact('events', 'portfolios'));
     }
 
     public function contact(){
@@ -54,7 +80,7 @@ class HomeController extends Controller
     public function order($id){
         $portfolio = Portfolio::find($id);
         $events = Event::orderBy('created_at', 'desc')->take(4)->get();
-        $portfolios = Portfolio::whereNotIn('id', $portfolio)->orderBy('created_at', 'desc')->take(8)->get();
+        $portfolios = Portfolio::whereNotIn('id', $portfolio)->orderBy('created_at', 'desc')->take(4)->get();
         return view('order', compact('portfolio', 'portfolios', 'events'));
     }
 

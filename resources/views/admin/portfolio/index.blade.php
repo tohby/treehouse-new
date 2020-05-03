@@ -26,14 +26,14 @@
                                 <a href="/portfolio/{{$item->id}}/edit" class="btn btn-link text-dark text-muted"><i
                                         class="fas fa-pencil-alt"></i></a>
                                 <button type="button" class="btn btn-link text-dark text-muted" data-toggle="modal"
-                                    data-target=".bd-delete-modal-lg"><i class="far fa-trash-alt"></i></button>
+                                    data-target=".DeleteModal{{$item->id}}"><i class="far fa-trash-alt"></i></button>
                             </small>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="modal fade bd-delete-modal-lg {{$item->id}}DeleteModal" tabindex="-1" role="dialog"
+            <div class="modal fade bd-delete-modal-lg DeleteModal{{$item->id}}" tabindex="-1" role="dialog"
                 aria-labelledby="myLargeModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="dialog">
                     <div class="modal-content p-5 mt-2">
@@ -43,6 +43,10 @@
             </div>
             @endforeach
         </div>
+    </div>
+
+    <div class="float-right mt-5">
+        {{$portfolios->links()}}
     </div>
 </div>
 @endsection

@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
 
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/global.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/global.css')}}">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -182,21 +182,21 @@
                     <div class="image_about_me">
                         <div class="owl-carousel gt_slide_partner">
                             <div class="item gt_product-carousel--item">
-                                <img src="./images/aboutmepage/WANG2194.jpg">
+                                <img src="{{asset('images/aboutmepage/WANG2194.jpg')}}">
                             </div>
                             <div class="item gt_product-carousel--item">
-                                <img src="./images/aboutmepage/WANG2252.jpg">
+                                <img src="{{asset('images/aboutmepage/WANG2252.jpg')}}">
                             </div>
                             <div class="item gt_product-carousel--item">
-                            <img src="./images/aboutmepage/WANG2322.jpg">
+                                <img src="{{asset('images/aboutmepage/WANG2322.jpg')}}">
                             </div>
                             <div class="item gt_product-carousel--item">
-                            <img src="./images/aboutmepage/WANG2331.jpg">
+                                <img src="{{asset('images/aboutmepage/WANG2331.jpg')}}">
                             </div>
-                            
+
                         </div>
                         <div class="image_mobile">
-                        <img src="./images/aboutmepage/WANG2252.jpg">
+                            <img src="./images/aboutmepage/WANG2252.jpg">
                         </div>
                     </div>
                 </div>
@@ -204,27 +204,38 @@
                     <div class="content_text">
                         <div class="title_content">
                             <span>As the Sculptor
-</span>
+                            </span>
                         </div>
                         <div class="detail_content">
                             <p>
-                            Sculpting entered my life during my time at the Police Academy, when I was experimenting
-with myself as an artist. Over the years, I’ve realised that painting is always a tool in my toolbox. I paint, I sell, I move on. But sculptures are my friends, they stay with me for life. So, I don’t make sculptures for sale or for money. I usually create them for myself and they make my world come alive.
+                                Sculpting entered my life during my time at the Police Academy, when I was experimenting
+                                with myself as an artist. Over the years, I’ve realised that painting is always a tool
+                                in my toolbox. I paint, I sell, I move on. But sculptures are my friends, they stay with
+                                me for life. So, I don’t make sculptures for sale or for money. I usually create them
+                                for myself and they make my world come alive.
 
-My sculptures are always larger than life. They’re tall, life-like and are almost always the size
-of buildings. My sculptures create a connection between my world and the world beyond. They inspire people to think big and dream big, discover new worlds, while staying grounded in nature.
+                                My sculptures are always larger than life. They’re tall, life-like and are almost always
+                                the size
+                                of buildings. My sculptures create a connection between my world and the world beyond.
+                                They inspire people to think big and dream big, discover new worlds, while staying
+                                grounded in nature.
 
-With my paintings, my audience gets to keep what I love; but with my sculptures, people get
-to see what I actually do and how crazy I can be. I’m very aware of the dangers of actually physically building my sculptures. It takes a lot of money and energy with no returns, but it’s the energy that counts for me. I want people to come, visit, see, be inspired and leave. I create my sculptures with concrete and am now focussed on building several life-sized sculptures at Sky Horse Valley. That will be my artistic kingdom.
+                                With my paintings, my audience gets to keep what I love; but with my sculptures, people
+                                get
+                                to see what I actually do and how crazy I can be. I’m very aware of the dangers of
+                                actually physically building my sculptures. It takes a lot of money and energy with no
+                                returns, but it’s the energy that counts for me. I want people to come, visit, see, be
+                                inspired and leave. I create my sculptures with concrete and am now focussed on building
+                                several life-sized sculptures at Sky Horse Valley. That will be my artistic kingdom.
 
-Memorable event:
-Creating 36 penis-shaped sculptures at the Sky Horse Valley. One of them is
-the biggest penis sized sculpture in the world, 100 ft high.
+                                Memorable event:
+                                Creating 36 penis-shaped sculptures at the Sky Horse Valley. One of them is
+                                the biggest penis sized sculpture in the world, 100 ft high.
 
 
 
                             </p>
-                           
+
 
                         </div>
                     </div>
@@ -234,202 +245,9 @@ the biggest penis sized sculpture in the world, 100 ft high.
         </div>
     </section>
 
-    <section class="gf_section-3 list_product_mobile" data-name="Portfolio">
-        <div class="gf_container">
-            <div class="portfolio_body">
-                <div class="gf_flex title_portfolio" style="justify-content: center">
-                    <h2>Similar Products</h2>
-                </div>
-                <div class="portfolio_content">
-                    <div class="gf_flex box_item">
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item1"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item1"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item1"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item2"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item3"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item1"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item2"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item3"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <section class="gf_section-13 event_mobile" data-name="Events">
-        <div class="gf_container">
-            <div class="portfolio_body">
-                <div class="gf_flex title_portfolio" style="justify-content: center">
-                    <h2>Events</h2>
-                </div>
-                <div class="popup">
-                    <div class="portfolio_content">
-                        <div class="gf_flex box_item">
-                            <div class="item_content">
-                                <div class="item ">
-                                    <div class="bacground_image item1">
-                                        <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
-                                    </div>
-                                </div>
-                                <div class="info_product">
-                                    <h3>Untitled Abstract IV</h3>
-                                    <p>Nguyen Lam</p>
-
-                                </div>
-                            </div>
-                            <div class="item_content">
-                                <div class="item ">
-                                    <div class="bacground_image item1">
-                                        <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
-                                    </div>
-                                </div>
-                                <div class="info_product">
-                                    <h3>Untitled Abstract IV</h3>
-                                    <p>Nguyen Lam</p>
-
-                                </div>
-                            </div>
-                            <div class="item_content">
-                                <div class="item ">
-                                    <div class="bacground_image item1">
-                                        <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
-                                    </div>
-                                </div>
-                                <div class="info_product">
-                                    <h3>Untitled Abstract IV</h3>
-                                    <p>Nguyen Lam</p>
-
-                                </div>
-                            </div>
-                            <div class="item_content">
-                                <div class="item ">
-                                    <div class="bacground_image item1">
-                                        <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
-                                    </div>
-                                </div>
-                                <div class="info_product">
-                                    <h3>Untitled Abstract IV</h3>
-                                    <p>Nguyen Lam</p>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="show">
-                    <div class="overlay"></div>
-                    <div class="img-show">
-                        <span>X</span>
-                        <img src="">
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
+    @include('sections/portfolio-section')
+    
+    @include('sections/event-section')
 
     <section class="gf_section-10" data-name="Footer">
         <div class="footer_content">

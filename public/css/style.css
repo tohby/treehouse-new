@@ -1084,6 +1084,10 @@
   color: #fff;
 }
 
+.gf_section-5 .menu_content .logo .logo_text:hover {
+  text-decoration: none;
+}
+
 .gf_section-5 .menu_content .logo .text_large {
   font-size: 25px;
 }

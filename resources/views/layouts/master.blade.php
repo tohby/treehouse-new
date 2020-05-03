@@ -96,8 +96,8 @@
                     Dashboard</a>
                 <a href="/portfolio"
                     class="{{ request()->is('portfolio') || request()->is('portfolio/*') ? 'active' : '' }}"></i>Portfolio</a>
-                <a href="/our-events"
-                    class="{{ request()->is('our-events') || request()->is('our-events/*') ? 'active' : '' }}"></i>Events</a>
+                <a href="/events"
+                    class="{{ request()->is('events') || request()->is('events/*') ? 'active' : '' }}"></i>Events</a>
                 <a href="/orders"
                     class="{{ request()->is('orders') || request()->is('orders/*') ? 'active' : '' }}"></i>Orders</a>
                 <a href="/messages"

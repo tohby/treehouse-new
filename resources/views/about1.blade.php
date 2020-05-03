@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
 
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/global.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/global.css')}}">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -182,16 +182,16 @@
                     <div class="image_about_me">
                         <div class="owl-carousel gt_slide_partner">
                             <div class="item gt_product-carousel--item">
-                                <img src="./images/aboutmepage/WANG2194.jpg">
+                                <img src="{{asset('images/aboutmepage/WANG2194.jpg')}}">
                             </div>
                             <div class="item gt_product-carousel--item">
-                                <img src="./images/aboutmepage/WANG2252.jpg">
+                                <img src="{{asset('images/aboutmepage/WANG2252.jpg')}}">
                             </div>
                             <div class="item gt_product-carousel--item">
-                            <img src="./images/aboutmepage/WANG2322.jpg">
+                                <img src="{{asset('images/aboutmepage/WANG2322.jpg')}}">
                             </div>
                             <div class="item gt_product-carousel--item">
-                            <img src="./images/aboutmepage/WANG2331.jpg">
+                                <img src="{{asset('images/aboutmepage/WANG2331.jpg')}}">
                             </div>
                             
                         </div>
@@ -230,202 +230,9 @@ all the different elements of my life come together here. I’d like to think of
         </div>
     </section>
 
-    <section class="gf_section-3 list_product_mobile" data-name="Portfolio">
-        <div class="gf_container">
-            <div class="portfolio_body">
-                <div class="gf_flex title_portfolio" style="justify-content: center">
-                    <h2>Similar Products</h2>
-                </div>
-                <div class="portfolio_content">
-                    <div class="gf_flex box_item">
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item1"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item1"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item1"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item2"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item3"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item1"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item2"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item3"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <section class="gf_section-13 event_mobile" data-name="Events">
-        <div class="gf_container">
-            <div class="portfolio_body">
-                <div class="gf_flex title_portfolio" style="justify-content: center">
-                    <h2>Events</h2>
-                </div>
-                <div class="popup">
-                    <div class="portfolio_content">
-                        <div class="gf_flex box_item">
-                            <div class="item_content">
-                                <div class="item ">
-                                    <div class="bacground_image item1">
-                                        <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
-                                    </div>
-                                </div>
-                                <div class="info_product">
-                                    <h3>Untitled Abstract IV</h3>
-                                    <p>Nguyen Lam</p>
-
-                                </div>
-                            </div>
-                            <div class="item_content">
-                                <div class="item ">
-                                    <div class="bacground_image item1">
-                                        <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
-                                    </div>
-                                </div>
-                                <div class="info_product">
-                                    <h3>Untitled Abstract IV</h3>
-                                    <p>Nguyen Lam</p>
-
-                                </div>
-                            </div>
-                            <div class="item_content">
-                                <div class="item ">
-                                    <div class="bacground_image item1">
-                                        <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
-                                    </div>
-                                </div>
-                                <div class="info_product">
-                                    <h3>Untitled Abstract IV</h3>
-                                    <p>Nguyen Lam</p>
-
-                                </div>
-                            </div>
-                            <div class="item_content">
-                                <div class="item ">
-                                    <div class="bacground_image item1">
-                                        <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
-                                    </div>
-                                </div>
-                                <div class="info_product">
-                                    <h3>Untitled Abstract IV</h3>
-                                    <p>Nguyen Lam</p>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="show">
-                    <div class="overlay"></div>
-                    <div class="img-show">
-                        <span>X</span>
-                        <img src="">
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
+    @include('sections/portfolio-section')
+    
+    @include('sections/event-section')
 
     <section class="gf_section-10" data-name="Footer">
         <div class="footer_content">

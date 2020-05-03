@@ -17,8 +17,7 @@
                                 </div>
                             </div>
                             <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
+                                <h3>{{$event->name}}</h3>
                             </div>
                         </div>
                         @endforeach

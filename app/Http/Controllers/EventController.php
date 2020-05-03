@@ -15,7 +15,7 @@ class EventController extends Controller
     public function index()
     {
         $date = today()->format('Y-m-d');
-        $events = Event::orderBy('created_at', 'desc')->simplePaginate(12);
+        $events = Event::orderBy('created_at', 'desc')->paginate(4);
         return view('admin.events.index', compact('events'));
     }
 
@@ -43,8 +43,7 @@ class EventController extends Controller
             'description' => 'required',
             'start_at'  => 'required|date|after:yesterday',
             'end_at'  => 'nullable|date|after:yesterday',
-            'gate' => 'numeric',
-            'description' => 'required',
+            // 'fee' => 'numeric',
             'image.*.file' => 'required|image',
         ]);
 
@@ -71,7 +70,7 @@ class EventController extends Controller
             'end_at' => $request->input('end_at'),
         ]);
 
-        return redirect('/events')->with('success', 'New Event has been successfully added');
+        return redirect('/our-events')->with('success', 'New Event has been successfully added');
     }
 
     /**
@@ -113,13 +112,16 @@ class EventController extends Controller
             'description' => 'required',
             'start_at'  => 'required|date|after:yesterday',
             'end_at'  => 'nullable|date|after:yesterday',
-            'gate' => 'numeric',
-            'description' => 'required',
+            // 'fee' => 'numeric',
         ]);
 
-        $event = Event::find($portfolio->id);
-        $event->title = $request->input('title');
+        $event = Event::find($event->id);
+        $event->name = $request->input('name');
         $event->description = $request->input('description');
+        $event->address = $request->input('address');
+        $event->start_at = $request->input('start_at');
+        $event->end_at = $request->input('end_at');
+        $event->ticket_fee = $request->input('fee');
 
         if($request->hasFile('image')){
             $image = $request->file('image');
@@ -131,15 +133,12 @@ class EventController extends Controller
             //filename to store
             $fileNameToStore = $fileName.'_'.time().'.'.$extension;
             //image upload
-            $path = $image->storeAs('public/post_images', $fileNameToStore);
-            $images = Images::create([
-                'portfolio_id' => $portfolio->id,
-                'image' => $fileNameToStore,
-            ]);
+            $path = $image->storeAs('public/event_images', $fileNameToStore);
+            $event->image = $fileNameToStore;
         }
         $event->save();
 
-        return redirect('/portfolio')->with('success', 'Item has been successfully updated');
+        return redirect('/events')->with('success', 'Item has been successfully updated');
     }
 
     /**

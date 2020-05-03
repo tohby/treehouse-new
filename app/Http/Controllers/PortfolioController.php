@@ -15,7 +15,7 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        $portfolios = Portfolio::orderBy('created_at', 'desc')->simplePaginate(12);
+        $portfolios = Portfolio::orderBy('created_at', 'desc')->paginate(8);
         return view('admin/portfolio/index', compact('portfolios'));
     }
 

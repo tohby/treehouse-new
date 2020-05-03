@@ -3,7 +3,7 @@
 
 Hi there,
 
-A customer ust placed and order. Please review it and contact the customer quickly. Follow the link below to see all new orders.
+A customer just placed and order. Please review it and contact the customer quickly. Follow the link below to see all new orders.
 
 @component('mail::button', ['url' => $url])
 See all orders

@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Pagination\Paginator;
+use App\Portfolio;
+use App\Events;
 use Illuminate\Support\ServiceProvider;
 
 

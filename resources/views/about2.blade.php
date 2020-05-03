@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
 
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/global.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/global.css')}}">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -182,21 +182,20 @@
                     <div class="image_about_me">
                         <div class="owl-carousel gt_slide_partner">
                             <div class="item gt_product-carousel--item">
-                                <img src="./images/aboutmepage/WANG2194.jpg">
+                                <img src="{{asset('images/aboutmepage/WANG2194.jpg')}}">
                             </div>
                             <div class="item gt_product-carousel--item">
-                                <img src="./images/aboutmepage/WANG2252.jpg">
+                                <img src="{{asset('images/aboutmepage/WANG2252.jpg')}}">
                             </div>
                             <div class="item gt_product-carousel--item">
-                            <img src="./images/aboutmepage/WANG2322.jpg">
+                                <img src="{{asset('images/aboutmepage/WANG2322.jpg')}}">
                             </div>
                             <div class="item gt_product-carousel--item">
-                            <img src="./images/aboutmepage/WANG2331.jpg">
+                                <img src="{{asset('images/aboutmepage/WANG2331.jpg')}}">
                             </div>
-                            
                         </div>
                         <div class="image_mobile">
-                        <img src="./images/aboutmepage/WANG2252.jpg">
+                            <img src="./images/aboutmepage/WANG2252.jpg">
                         </div>
                     </div>
                 </div>
@@ -204,25 +203,41 @@
                     <div class="content_text">
                         <div class="title_content">
                             <span>As the Installation Artist
-</span>
+                            </span>
                         </div>
                         <div class="detail_content">
                             <p>
-                            I took up Installation Art around 20 years ago, when I found myself wanting to find new ways to express myself and my ideas. In Vietnam, I’m one of the very few artists who started creating installation art in public arenas. It’s avante garde. Love, sex, nature, music is always at the core of what I do, but with Installation Art, the scope is bigger and there are many materials and ways to tell my story better, so I enjoy the elaborate process of it.
+                                I took up Installation Art around 20 years ago, when I found myself wanting to find new
+                                ways to express myself and my ideas. In Vietnam, I’m one of the very few artists who
+                                started creating installation art in public arenas. It’s avante garde. Love, sex,
+                                nature, music is always at the core of what I do, but with Installation Art, the scope
+                                is bigger and there are many materials and ways to tell my story better, so I enjoy the
+                                elaborate process of it.
 
-All of my Installation Art is outdoors. It’s never inside a museum or a gallery. It’s out on the
-streets, fields, lakes, ocean, nature. I believe Installation Art has the power to touch nature directly. It is what it is. Nature supports art and art supports nature. For me it’s live art. It’s not just something people look at, I often put myself in my installations. Installation art for me is a big, open door that welcomes people, audio, video, languages, cultures to enter one space and make a point.
+                                All of my Installation Art is outdoors. It’s never inside a museum or a gallery. It’s
+                                out on the
+                                streets, fields, lakes, ocean, nature. I believe Installation Art has the power to touch
+                                nature directly. It is what it is. Nature supports art and art supports nature. For me
+                                it’s live art. It’s not just something people look at, I often put myself in my
+                                installations. Installation art for me is a big, open door that welcomes people, audio,
+                                video, languages, cultures to enter one space and make a point.
 
-Memorable events:
-In 2000, I made a 1km-long installation about sex and music in Hanoi. The Police came and destroyed it in front of my eyes, it was like killing my children in front of me. I was devastated and it’s been one of the most difficult periods of my life so far. I had no money, home or food at the time and I still put all my energy into these installations. I was so angry; I decide to channel my anger into building a dungeon in
-my home. I built a small prison for myself and wanted to show the cops that even if they did lock me in prison, I would still be free. I would still continue to practice art
-and be free. In 2010, the Discovery Channel made a video about one of my installations, a
-bamboo bridge structure.
+                                Memorable events:
+                                In 2000, I made a 1km-long installation about sex and music in Hanoi. The Police came
+                                and destroyed it in front of my eyes, it was like killing my children in front of me. I
+                                was devastated and it’s been one of the most difficult periods of my life so far. I had
+                                no money, home or food at the time and I still put all my energy into these
+                                installations. I was so angry; I decide to channel my anger into building a dungeon in
+                                my home. I built a small prison for myself and wanted to show the cops that even if they
+                                did lock me in prison, I would still be free. I would still continue to practice art
+                                and be free. In 2010, the Discovery Channel made a video about one of my installations,
+                                a
+                                bamboo bridge structure.
 
 
 
                             </p>
-                           
+
 
                         </div>
                     </div>
@@ -232,201 +247,9 @@ bamboo bridge structure.
         </div>
     </section>
 
-    <section class="gf_section-3 list_product_mobile" data-name="Portfolio">
-        <div class="gf_container">
-            <div class="portfolio_body">
-                <div class="gf_flex title_portfolio" style="justify-content: center">
-                    <h2>Similar Products</h2>
-                </div>
-                <div class="portfolio_content">
-                    <div class="gf_flex box_item">
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item1"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
+    @include('sections/portfolio-section')
 
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item1"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item1"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item2"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item3"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item1"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item2"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-                        <div class="item_content">
-                            <div class="item ">
-                                <div class="bacground_image item3"></div>
-                                <a href="#" class="button_order">
-                                    Order Paint
-                                </a>
-                            </div>
-                            <div class="info_product">
-                                <h3>Untitled Abstract IV</h3>
-                                <p>Nguyen Lam</p>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <section class="gf_section-13 event_mobile" data-name="Events">
-        <div class="gf_container">
-            <div class="portfolio_body">
-                <div class="gf_flex title_portfolio" style="justify-content: center">
-                    <h2>Events</h2>
-                </div>
-                <div class="popup">
-                    <div class="portfolio_content">
-                        <div class="gf_flex box_item">
-                            <div class="item_content">
-                                <div class="item ">
-                                    <div class="bacground_image item1">
-                                        <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
-                                    </div>
-                                </div>
-                                <div class="info_product">
-                                    <h3>Untitled Abstract IV</h3>
-                                    <p>Nguyen Lam</p>
-
-                                </div>
-                            </div>
-                            <div class="item_content">
-                                <div class="item ">
-                                    <div class="bacground_image item1">
-                                        <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
-                                    </div>
-                                </div>
-                                <div class="info_product">
-                                    <h3>Untitled Abstract IV</h3>
-                                    <p>Nguyen Lam</p>
-
-                                </div>
-                            </div>
-                            <div class="item_content">
-                                <div class="item ">
-                                    <div class="bacground_image item1">
-                                        <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
-                                    </div>
-                                </div>
-                                <div class="info_product">
-                                    <h3>Untitled Abstract IV</h3>
-                                    <p>Nguyen Lam</p>
-
-                                </div>
-                            </div>
-                            <div class="item_content">
-                                <div class="item ">
-                                    <div class="bacground_image item1">
-                                        <img src="images/patrick-tomasso-0V3qHmSV1kM-unsplash@3x.png">
-                                    </div>
-                                </div>
-                                <div class="info_product">
-                                    <h3>Untitled Abstract IV</h3>
-                                    <p>Nguyen Lam</p>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="show">
-                    <div class="overlay"></div>
-                    <div class="img-show">
-                        <span>X</span>
-                        <img src="">
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
+    @include('sections/event-section')
 
 
     <section class="gf_section-10" data-name="Footer">

@@ -118,7 +118,7 @@
                     </div>
                     <div class="gf_flex nav_menu">
                         <ul class="gf_flex menu_left">
-                            <li class="">
+                            <li class="active">
                                 <a href="/store">Store</a>
                             </li>
                             {{-- <li>
@@ -140,7 +140,7 @@
                             </li>
                         </ul>
                         <ul class="gf_flex menu_right">
-                            <li class="active">
+                            <li class="">
                                 <a href="/about">About Me</a>
                             </li>
                             <li>
