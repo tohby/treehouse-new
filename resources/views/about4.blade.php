@@ -180,19 +180,18 @@
 
                 <div class="content_left">
                     <div class="image_about_me">
-                        <div class="owl-carousel gt_slide_partner">
-                           <div class="item gt_product-carousel--item">
-                            <img src="images/WANG2194.jpg">
-                        </div>
-                        <div class="item gt_product-carousel--item">
-                            <img src="images/WANG2252.jpg">
-                        </div>
-                        <div class="item gt_product-carousel--item">
-                            <img src="images/WANG2322.jpg">
-                        </div>
-                        <div class="item gt_product-carousel--item">
-                            <img src="images/WANG2331.jpg">
-                        </div>
+                       <div class="item gt_product-carousel--item">
+                        <img src="{{asset('images/WANG2194.jpg')}}">
+                    </div>
+                    <div class="item gt_product-carousel--item">
+                        <img src="{{asset('images/WANG2252.jpg')}}">
+                    </div>
+                    <div class="item gt_product-carousel--item">
+                        <img src="{{asset('images/WANG2322.jpg')}}">
+                    </div>
+                    <div class="item gt_product-carousel--item">
+                        <img src="{{asset('images/WANG2331.jpg')}}">
+                    </div>
 
                         </div>
                         <div class="image_mobile">
