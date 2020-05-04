@@ -11,7 +11,7 @@
                     </div>
 
                     <div class="item gt_product-carousel--item">
-                        <img src="images/partners/OPQTV.png">
+                        <img src="images/partners/opqtv.png">
                     </div>
                     <div class="item gt_product-carousel--item">
                         <img src="images/partners/vtv.png">

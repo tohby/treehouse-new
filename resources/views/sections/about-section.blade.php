@@ -8,7 +8,6 @@
             <div class="content_left">
                 <div class="image_about_me">
                     <img src="images/WANG2329.JPG">
-
                 </div>
             </div>
             <div class="content_right">
