@@ -25,16 +25,17 @@
         </div>
         <div class="row">
             @foreach ($portfolio->images as $image)
-            <div class="col-md-3 p-2">
+            <div class="col p-2">
                 <img src="/storage/post_images/{{$image->image}}" class="img-thumbnail thumbnail rounded-lg" alt="">
             </div>
             @endforeach
+            <div class="col justify-content-end"><a href="/portfolio/{{$portfolio->id}}/images" class="align-middle">Edit/Delete Images</a></div>
         </div>
         <div class="form-row">
             <div class="form-group col-md-4 mt-3">
                 <div class="custom-file">
                     <input type="file" class="custom-file-input @error('image') is-invalid @enderror" name="image[]"
-                        accept="image/*" required multiple>
+                        accept="image/*" multiple>
                     <label class="custom-file-label" for="image">Choose image files</label>
                 </div>
             </div>

@@ -139,7 +139,7 @@
                             </li>
                         </ul>
                         <ul class="gf_flex menu_right">
-                            <li class="active">
+                            <li class="">
                                 <a href="/about">About Me</a>
                             </li>
                             <li>

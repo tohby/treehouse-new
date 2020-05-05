@@ -32,6 +32,10 @@ Route::group(['middleware' => 'auth'], function() {
     Route::resource('/users', 'UsersController')->except(['show', 'edit', 'update']);
 
     Route::resource('portfolio', 'PortfolioController');
+    Route::get('portfolio/{id}/images', 'ImagesController@images');
+    Route::put('portfolio/{id}/images/update', 'ImagesController@update');
+    Route::delete('portfolio/{id}/images/delete', 'ImagesController@destroy');
+
     Route::resource('events', 'EventController');
     Route::get('orders', 'OrderController@index');
     Route::get('orders/{id}/details', 'OrderController@show');
