@@ -131,7 +131,7 @@
                     <div class="gf_flex nav_menu">
                         <ul class="gf_flex menu_left">
                             <li class="">
-                                <a href="/products">Store</a>
+                                <a href="/store">Store</a>
                             </li>
                             {{-- <li>
                                 <a href="#">News</a>
