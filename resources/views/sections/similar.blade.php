@@ -11,7 +11,7 @@
                         <div class="item ">
                             <div class="bacground_image"
                                 style="background-image: url('/storage/post_images/{{$item->images->first()->image}}');"></div>
-                            <a href="product/{{$item->id}}" class="button_order">
+                            <a href="/product/{{$item->id}}" class="button_order">
                                 Order Paint
                             </a>
                         </div>
